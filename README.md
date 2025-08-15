@@ -1,157 +1,112 @@
-# OpenROAD Flow
+# BFT ASIC Implementation using OpenROAD Flow
 
-[![Build Status](https://jenkins.openroad.tools/buildStatus/icon?job=OpenROAD-flow-scripts-Public%2Fpublic_tests_all%2Fmaster)](https://jenkins.openroad.tools/view/Public/job/OpenROAD-flow-scripts-Public/job/public_tests_all/job/master/)
-[![Docs](https://readthedocs.org/projects/openroad-flow-scripts/badge/?version=latest)](https://openroad-flow-scripts.readthedocs.io/en/latest/?badge=latest)
+This repository uses `OpenROAD-impl` to collect ASIC implementation results, including power, timing, and area metrics. While the main repository contains the generated data, this repository includes the essential flow directory, which can be integrated into a fresh OpenROAD-flow-scripts setup to reproduce the results.
 
-OpenROAD-flow-scripts (ORFS) is a fully autonomous, RTL-GDSII flow
-for rapid architecture and design space exploration, early prediction
-of QoR and detailed physical design implementation. However, ORFS
-also enables manual intervention for finer user control of individual
-flow stages through Tcl commands and Python APIs.
 
-```mermaid
-%%{init: { 'logLevel': 'debug', 'theme': 'dark'
-  } }%%
-timeline
-  title RTL-GDSII Using OpenROAD-flow-scripts
-  Synthesis
-    : Inputs  [RTL, SDC, .lib, .lef]
-    : Logic Synthesis  (Yosys)
-    : Output files  [Netlist, SDC]
-  Floorplan
-    : Floorplan Initialization
-    : IO placement  (random)
-    : Timing-driven mixed-size placement
-    : Macro placement
-    : Tapcell and welltie insertion
-    : PDN generation
-  Placement
-    : Global placement without placed IOs
-    : IO placement  (optimized)
-    : Global placement with placed IOs
-    : Resizing and buffering
-    : Detailed placement
-  CTS : Clock Tree Synthesis
-    : Timing optimization
-    : Filler cell insertion
-  Routing
-    : Global Routing
-    : Detailed Routing
-  Finishing
-    : Metal Fill insertion
-    : Signoff timing report
-    : Generate GDSII  (KLayout)
-    : DRC/LVS check (KLayout)
-```
+There are a list of other relevant repos:
+- Main Repo: https://git.uwaterloo.ca/h3sun/720-noc-project
+- OpenROAD-impl Repo: https://git.uwaterloo.ca/h3sun/openroad-flow-impl
+- BFT Repo: https://git.uwaterloo.ca/watcag/bft
+- Credit BFT Repo: https://git.uwaterloo.ca/watcag/bft-credit-vcs
 
-## Tool Installation
+## Getting started 
+**Until August 2025**
 
-### Docker Based Installation
+Please get into one of the following ECE servers:
 
-To ease dependency installation issues, ORFS uses docker images.
-Docker image includes ORFS binaries, applications as well as all
-required dependencies. All of the flow tools are encapsulated
-inside the container image.
+- uwing.eng.uwaterloo.ca  
+- razorcrest.eng.uwaterloo.ca  
+- haulcraft.eng.uwaterloo.ca  
+- tantive4.eng.uwaterloo.ca  
 
-If `Docker` is not installed already, install latest docker tool
-based on OS from [here](https://docs.docker.com/engine/install/).
+Now copy over the full OpenROAD-flow-scripts directory:
 
-To manage docker as non-root user and verify that you can run
-`docker` commands without `sudo` must complete steps from
-[here](https://docs.docker.com/engine/install/linux-postinstall/).
+    cp -r /scratch/OpenROAD-flow-scripts ./
 
-#### Build ORFS with Docker
+**Note:** This copy step can take several minutes as the directory is large (over 9GB).
 
-Document for detailed steps on docker based installation found
-[here](./docs/user/BuildWithDocker.md).
+## Environment setup
 
-### Pre-built Binaries
+Before using the OpenROAD flow, you must set the required environment variables. Add the following alias to your shell configuration file (e.g., `.bashrc` or `.zshrc`):
 
-You can download, set up and run ORFS easily with pre-built
-binaries, including OpenROAD, Yosys and Klayout. See instructions
-[here](./docs/user/BuildWithPrebuilt.md).
+    cd OpenROAD-flow-scripts/flow
 
-> **Thanks** to [Precision Innovations](https://precisioninno.com/) for
-> providing and supporting OpenROAD based binaries.
+and then:
 
-> **Note** Only the latest version of OpenROAD is guaranteed to work with
-> the latest version of ORFS.
+    alias openroadenv='\
+    export FLOW_HOME=~/openroad-flow-impl/OpenROAD-flow-scripts/flow && \
+    export OPENROAD=~/openroad-flow-impl/OpenROAD-flow-scripts/tools/OpenROAD && \
+    export PATH=~/openroad-flow-impl/OpenROAD-flow-scripts/tools/OpenROAD/bin:$PATH && \
+    export PATH=~/openroad-flow-impl/OpenROAD-flow-scripts/tools/yosys/bin:$PATH'
 
-> **Disclaimer** The versions of OpenROAD, Yosys and Klayout provided by
-> other third-party vendors are not guaranteed to work with ORFS.
+After updating your shell configuration, reload it and run:
 
-### Build from sources locally
+    openroadenv
 
-Document for detailed local build from sources and installation steps found [here](./docs/user/BuildLocally.md).
+## Basic Flow Check
 
-## Using the Flow
+To verify that your OpenROAD flow is working properly, execute:
 
-- For details about the OpenROAD and the available features and
-  individual flows commands, see the documentation
-  [here](https://openroad.readthedocs.io/en/latest/).
-- For details about automated flow setup, see ORFS docs
-  [here](https://openroad-flow-scripts.readthedocs.io/en/latest/index2.html#getting-started-with-openroad-flow-scripts).
-- Flow tutorial to run the complete OpenROAD based flow from
-  RTL-GDSII, see the tutorial
-  [here](https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html).
-- To watch ORFS flow tutorial videos, check
-  [here](https://theopenroadproject.org/video).
+    make DESIGN_CONFIG=./designs/asap7/ibex/config.mk
 
-## Building from your own git repository
+To clean the flow results, run:
 
-ORFS supports hosting projects in your own git repository
-without the need to fork ORFS.
+    make clean_all DESIGN_CONFIG=./designs/asap7/ibex/config.mk
 
-To build from your own git repository:
+Successful output will include lines like:
 
-    cd /home/me/myproject
-    make --file=~/OpenROAD-flow-scripts/flow/Makefile DESIGN_CONFIG=somefolder/config.mk ...
+    cp results/asap7/ibex/base/6_1_merged.gds results/asap7/ibex/base/6_final.gds
+    ./logs/asap7/ibex/base
+    Log                            Elapsed seconds Peak Memory/MB
+    1_1_yosys                                   26            185
+    1_1_yosys_canonicalize                       0             93
+    2_1_floorplan                                7            277
+    2_2_floorplan_macro                          0            209
+    2_3_floorplan_tapcell                        0            198
+    2_4_floorplan_pdn                            0            213
+    3_1_place_gp_skip_io                         4            244
+    3_2_place_iop                                0            212
+    3_3_place_gp                                24            444
+    3_4_place_resized                           12            288
+    3_5_place_dp                                10            358
+    4_1_cts                                     16            407
+    5_1_grt                                     27            706
+    5_2_route                                  109           6807
+    5_3_fillcell                                 1            312
+    6_1_fill                                     0            238
+    6_1_merge                                    1            529
+    6_report                                    46            862
+    Total                                      283           6807
 
-## Running a quick smoke-test of ORFS on your own Verilog
+This indicates that the flow has completed successfully. It is okay if your numbers differ slightly. The key indicator of success is the generation of the GDS file at:
 
-You can [run ORFS on your own Verilog files](./flow/designs/asap7/minimal/README.md)
-without setting up a project or moving your Verilog files and even learn
-a thing or two about floorplan, placement and routing
-before you create an .sdc file and a config.mk file.
+    results/asap7/ibex/base/6_final.gds
 
-## Citing this Work
+You can verify its existence by running:
 
-If you use this software in any published work, we would appreciate a citation!
-Please use the following references:
+    ls results/asap7/ibex/base/6_final.gds
 
-```
-@article{ajayi2019openroad,
-  title={OpenROAD: Toward a Self-Driving, Open-Source Digital Layout Implementation Tool Chain},
-  author={Ajayi, T and Blaauw, D and Chan, TB and Cheng, CK and Chhabria, VA and Choo, DK and Coltella, M and Dobre, S and Dreslinski, R and Foga{\c{c}}a, M and others},
-  journal={Proc. GOMACTECH},
-  pages={1105--1110},
-  year={2019}
-}
-```
 
-A copy of this paper is available
-[here](http://people.ece.umn.edu/users/sachin/conf/gomactech19.pdf) (PDF).
+## Example Walkthrough
 
-```
-@inproceedings{ajayi2019toward,
-  title={Toward an open-source digital flow: First learnings from the openroad project},
-  author={Ajayi, Tutu and Chhabria, Vidya A and Foga{\c{c}}a, Mateus and Hashemi, Soheil and Hosny, Abdelrahman and Kahng, Andrew B and Kim, Minsoo and Lee, Jeongsup and Mallappa, Uday and Neseem, Marina and others},
-  booktitle={Proceedings of the 56th Annual Design Automation Conference 2019},
-  pages={1--4},
-  year={2019}
-}
-```
+You can remove `flow` directory directly from the current `OpenROAD-flow-scripts` repo, and then replace it with the one we have here in this repo. 
 
-A copy of this paper is available
-[here](https://vlsicad.ucsd.edu/Publications/Conferences/371/c371.pdf) (PDF).
+After you have done that, you can run commands like:
 
-If you like the tools, please give us a star on our GitHub repos!
+    make clean_all DESIGN_CONFIG=./designs/asap7/deflection_bft/config.mk
 
-## License
+and then 
 
-The OpenROAD-flow-scripts repository (build and run scripts) has a BSD 3-Clause License.
-The flow relies on several tools, platforms and designs that each have their own licenses:
+    make DESIGN_CONFIG=./designs/asap7/deflection_bft/config.mk
 
-- Find the tool license at: `OpenROAD-flow-scripts/tools/{tool}/` or `OpenROAD-flow-scripts/tools/OpenROAD/src/{tool}/`.
-- Find the platform license at: `OpenROAD-flow-scripts/flow/platforms/{platform}/`.
-- Find the design license at: `OpenROAD-flow-scripts/flow/designs/src/{design}/`.
+to verify correctness. 
+
+---
+
+For more information on OpenROAD flow and its output reports, refer to the official documentation:
+
+https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html
+
+
+
+
