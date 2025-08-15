@@ -1,0 +1,234 @@
+{
+  "creator": "Yosys 0.53 (git sha1 53c22ab7c, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)",
+  "modules": {
+    "mux": {
+      "attributes": {
+        "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/mux/mux.v:1.1-28.10",
+        "top": "00000000000000000000000000000001",
+        "hdlname": "mux"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "a": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "b": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "sel": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "y": {
+          "direction": "output",
+          "bits": [ 7 ]
+        }
+      },
+      "cells": {
+        "$auto$ff.cc:266:slice$4202": {
+          "hide_name": 1,
+          "type": "$sdff",
+          "parameters": {
+            "CLK_POLARITY": "00000000000000000000000000000001",
+            "SRST_POLARITY": "00000000000000000000000000000001",
+            "SRST_VALUE": "0",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/mux/mux.v:14.3-26.6"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "SRST": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 6 ],
+            "Q": [ 8 ],
+            "SRST": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$4203": {
+          "hide_name": 1,
+          "type": "$sdff",
+          "parameters": {
+            "CLK_POLARITY": "00000000000000000000000000000001",
+            "SRST_POLARITY": "00000000000000000000000000000001",
+            "SRST_VALUE": "0",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/mux/mux.v:14.3-26.6"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "SRST": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 5 ],
+            "Q": [ 9 ],
+            "SRST": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$4204": {
+          "hide_name": 1,
+          "type": "$sdff",
+          "parameters": {
+            "CLK_POLARITY": "00000000000000000000000000000001",
+            "SRST_POLARITY": "00000000000000000000000000000001",
+            "SRST_VALUE": "0",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/mux/mux.v:14.3-26.6"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "SRST": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 4 ],
+            "Q": [ 10 ],
+            "SRST": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$4205": {
+          "hide_name": 1,
+          "type": "$sdff",
+          "parameters": {
+            "CLK_POLARITY": "00000000000000000000000000000001",
+            "SRST_POLARITY": "00000000000000000000000000000001",
+            "SRST_VALUE": "0",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/mux/mux.v:14.3-26.6"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "SRST": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 11 ],
+            "Q": [ 7 ],
+            "SRST": [ 3 ]
+          }
+        },
+        "$ternary$/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/mux/mux.v:24$4185": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/mux/mux.v:24.12-24.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 10 ],
+            "S": [ 8 ],
+            "Y": [ 11 ]
+          }
+        }
+      },
+      "netnames": {
+        "$ternary$/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/mux/mux.v:24$4185_Y": {
+          "hide_name": 1,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/mux/mux.v:24.12-24.25"
+          }
+        },
+        "a": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/mux/mux.v:4.16-4.17"
+          }
+        },
+        "a_r": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/mux/mux.v:10.7-10.10"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/mux/mux.v:5.16-5.17"
+          }
+        },
+        "b_r": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/mux/mux.v:11.7-11.10"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/mux/mux.v:2.16-2.19"
+          }
+        },
+        "rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/mux/mux.v:3.16-3.19"
+          }
+        },
+        "sel": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/mux/mux.v:6.16-6.19"
+          }
+        },
+        "sel_r": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/mux/mux.v:12.7-12.12"
+          }
+        },
+        "y": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/mux/mux.v:7.16-7.17"
+          }
+        }
+      }
+    }
+  }
+}

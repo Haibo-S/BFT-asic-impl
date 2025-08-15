@@ -1,0 +1,61 @@
+
+20. Printing statistics.
+
+=== bft ===
+
+   Number of wires:              11968
+   Number of wire bits:          13291
+   Number of public wires:         326
+   Number of public wire bits:    1649
+   Number of ports:                  7
+   Number of port bits:           1330
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              13210
+     AND2x2_ASAP7_75t_R            895
+     AND2x4_ASAP7_75t_R              1
+     AND3x1_ASAP7_75t_R            509
+     AND4x1_ASAP7_75t_R            173
+     AND5x1_ASAP7_75t_R            151
+     AO211x2_ASAP7_75t_R            12
+     AO21x1_ASAP7_75t_R            352
+     AO221x1_ASAP7_75t_R           128
+     AO22x1_ASAP7_75t_R              8
+     AO31x2_ASAP7_75t_R             26
+     AO32x1_ASAP7_75t_R            189
+     AOI211x1_ASAP7_75t_R           97
+     AOI21x1_ASAP7_75t_R           194
+     AOI221x1_ASAP7_75t_R           42
+     AOI22x1_ASAP7_75t_R            17
+     BUFx2_ASAP7_75t_R            1624
+     BUFx3_ASAP7_75t_R               5
+     BUFx6f_ASAP7_75t_R              1
+     DFFHQNx1_ASAP7_75t_R         2611
+     HAxp5_ASAP7_75t_R              32
+     INVx1_ASAP7_75t_R            1105
+     NAND2x1_ASAP7_75t_R           694
+     NAND3x1_ASAP7_75t_R            16
+     NOR2x1_ASAP7_75t_R            922
+     NOR3x1_ASAP7_75t_R             12
+     OA211x2_ASAP7_75t_R           239
+     OA21x2_ASAP7_75t_R            371
+     OA221x2_ASAP7_75t_R             4
+     OA222x2_ASAP7_75t_R            17
+     OA22x2_ASAP7_75t_R             17
+     OA31x2_ASAP7_75t_R             39
+     OA33x2_ASAP7_75t_R              7
+     OAI21x1_ASAP7_75t_R           345
+     OAI22x1_ASAP7_75t_R            31
+     OR2x2_ASAP7_75t_R             248
+     OR3x1_ASAP7_75t_R             821
+     OR4x1_ASAP7_75t_R             390
+     OR4x2_ASAP7_75t_R               1
+     OR5x1_ASAP7_75t_R             259
+     TIELOx1_ASAP7_75t_R             1
+     XNOR2x2_ASAP7_75t_R             3
+     XOR2x2_ASAP7_75t_R            601
+
+   Chip area for module '\bft': 1756.029780
+     of which used for sequential elements: 761.367600 (43.36%)
+

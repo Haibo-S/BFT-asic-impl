@@ -1,0 +1,25 @@
+
+20. Printing statistics.
+
+=== mux ===
+
+   Number of wires:                 17
+   Number of wire bits:             17
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  6
+   Number of port bits:              6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     AND2x2_ASAP7_75t_R              3
+     DFFHQNx1_ASAP7_75t_R            4
+     INVx1_ASAP7_75t_R               2
+     INVx2_ASAP7_75t_R               1
+     NAND2x1_ASAP7_75t_R             1
+     OA211x2_ASAP7_75t_R             1
+
+   Chip area for module '\mux': 1.778760
+     of which used for sequential elements: 1.166400 (65.57%)
+

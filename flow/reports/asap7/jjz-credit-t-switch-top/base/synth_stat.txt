@@ -1,0 +1,68 @@
+
+20. Printing statistics.
+
+=== credit_t_switch_wrap ===
+
+   Number of wires:              40778
+   Number of wire bits:          40892
+   Number of public wires:          71
+   Number of public wire bits:     185
+   Number of ports:                 11
+   Number of port bits:            125
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              40824
+     AND2x2_ASAP7_75t_R            808
+     AND2x4_ASAP7_75t_R              2
+     AND3x1_ASAP7_75t_R            826
+     AND4x1_ASAP7_75t_R             55
+     AND4x2_ASAP7_75t_R              2
+     AND5x1_ASAP7_75t_R              7
+     AND5x2_ASAP7_75t_R              2
+     AO21x1_ASAP7_75t_R           4127
+     AO21x2_ASAP7_75t_R            397
+     AO221x1_ASAP7_75t_R            34
+     AO221x2_ASAP7_75t_R            19
+     AO22x1_ASAP7_75t_R             37
+     AO31x2_ASAP7_75t_R             27
+     AO32x1_ASAP7_75t_R             39
+     AO33x2_ASAP7_75t_R             61
+     AOI211x1_ASAP7_75t_R            4
+     AOI21x1_ASAP7_75t_R            28
+     AOI221x1_ASAP7_75t_R            9
+     AOI22x1_ASAP7_75t_R            15
+     BUFx12f_ASAP7_75t_R             3
+     BUFx2_ASAP7_75t_R            2954
+     BUFx3_ASAP7_75t_R             733
+     BUFx4f_ASAP7_75t_R             99
+     BUFx6f_ASAP7_75t_R            110
+     DFFHQNx1_ASAP7_75t_R         7233
+     FAx1_ASAP7_75t_R                6
+     HAxp5_ASAP7_75t_R              60
+     INVx1_ASAP7_75t_R            3628
+     INVx2_ASAP7_75t_R              29
+     INVx3_ASAP7_75t_R              21
+     INVx4_ASAP7_75t_R               2
+     NAND2x1_ASAP7_75t_R          6663
+     NAND2x2_ASAP7_75t_R             6
+     NAND3x1_ASAP7_75t_R             5
+     NOR2x1_ASAP7_75t_R           3799
+     NOR3x1_ASAP7_75t_R              4
+     OA211x2_ASAP7_75t_R          3461
+     OA21x2_ASAP7_75t_R           2962
+     OA222x2_ASAP7_75t_R            17
+     OA22x2_ASAP7_75t_R             10
+     OA31x2_ASAP7_75t_R              5
+     OA33x2_ASAP7_75t_R              1
+     OAI21x1_ASAP7_75t_R            65
+     OR2x2_ASAP7_75t_R              59
+     OR3x1_ASAP7_75t_R            2089
+     OR4x1_ASAP7_75t_R              99
+     OR5x1_ASAP7_75t_R              69
+     XNOR2x2_ASAP7_75t_R           109
+     XOR2x2_ASAP7_75t_R             24
+
+   Chip area for module '\credit_t_switch_wrap': 5044.957020
+     of which used for sequential elements: 2109.142800 (41.81%)
+

@@ -1,0 +1,1198 @@
+{
+  "creator": "Yosys 0.53 (git sha1 53c22ab7c, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)",
+  "modules": {
+    "topology_t_binary_tree_wrap": {
+      "attributes": {
+        "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:302.1-1463.10",
+        "top": "00000000000000000000000000000001",
+        "dynports": "00000000000000000000000000000001",
+        "hdlname": "topology_t_binary_tree_wrap"
+      },
+      "parameter_default_values": {
+        "A_W": "00000000000000000000000000000100",
+        "D_W": "00000000000000000000000000100000",
+        "FAIR_VC_ARB": "00000000000000000000000000000000",
+        "INTERFACE_FLOPS": "00000000000000000000000000000001",
+        "N": "00000000000000000000000000000010",
+        "VC_FIFO_DEPTH": "00000000000000000000000000100000",
+        "VC_W": "00000000000000000000000000000010"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "root_credit_vc_target": {
+          "direction": "input",
+          "bits": [ 4, 5 ]
+        },
+        "root_credit_packet": {
+          "direction": "input",
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42 ]
+        },
+        "root_credit_vc_credit_gnt": {
+          "direction": "input",
+          "bits": [ 43, 44 ]
+        },
+        "leaf_credit_vc_target": {
+          "direction": "input",
+          "bits": [ 45, 46, 47, 48 ]
+        },
+        "leaf_credit_packet": {
+          "direction": "input",
+          "bits": [ 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122 ]
+        },
+        "leaf_credit_vc_credit_gnt": {
+          "direction": "input",
+          "bits": [ 123, 124, 125, 126 ]
+        }
+      },
+      "cells": {
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.l_rx_fifos.gen_vc_logic[0].vc_fifo": {
+          "hide_name": 0,
+          "type": "$scopeinfo",
+          "parameters": {
+            "TYPE": "module"
+          },
+          "attributes": {
+            "cell_module_not_derived": "00000000000000000000000000000001",
+            "cell_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:779.12-788.11",
+            "module": "$paramod$d3e76b73c593fd382cc22ef4cf45e461023373e3\\fifo32",
+            "module_dynports": "00000000000000000000000000000001",
+            "module_hdlname": "fifo32",
+            "module_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:49.1-185.10"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.l_rx_fifos.gen_vc_logic[1].vc_fifo": {
+          "hide_name": 0,
+          "type": "$scopeinfo",
+          "parameters": {
+            "TYPE": "module"
+          },
+          "attributes": {
+            "cell_module_not_derived": "00000000000000000000000000000001",
+            "cell_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:779.12-788.11",
+            "module": "$paramod$d3e76b73c593fd382cc22ef4cf45e461023373e3\\fifo32",
+            "module_dynports": "00000000000000000000000000000001",
+            "module_hdlname": "fifo32",
+            "module_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:49.1-185.10"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.r_rx_fifos.gen_vc_logic[0].vc_fifo": {
+          "hide_name": 0,
+          "type": "$scopeinfo",
+          "parameters": {
+            "TYPE": "module"
+          },
+          "attributes": {
+            "cell_module_not_derived": "00000000000000000000000000000001",
+            "cell_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:845.12-854.11",
+            "module": "$paramod$d3e76b73c593fd382cc22ef4cf45e461023373e3\\fifo32",
+            "module_dynports": "00000000000000000000000000000001",
+            "module_hdlname": "fifo32",
+            "module_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:49.1-185.10"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.r_rx_fifos.gen_vc_logic[1].vc_fifo": {
+          "hide_name": 0,
+          "type": "$scopeinfo",
+          "parameters": {
+            "TYPE": "module"
+          },
+          "attributes": {
+            "cell_module_not_derived": "00000000000000000000000000000001",
+            "cell_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:845.12-854.11",
+            "module": "$paramod$d3e76b73c593fd382cc22ef4cf45e461023373e3\\fifo32",
+            "module_dynports": "00000000000000000000000000000001",
+            "module_hdlname": "fifo32",
+            "module_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:49.1-185.10"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst": {
+          "hide_name": 0,
+          "type": "$scopeinfo",
+          "parameters": {
+            "TYPE": "module"
+          },
+          "attributes": {
+            "cell_module_not_derived": "00000000000000000000000000000001",
+            "cell_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:958.10-979.9",
+            "module": "$paramod$499311c32f749920c371170cd3ea67c5d7888987\\t_switch",
+            "module_dynports": "00000000000000000000000000000001",
+            "module_hdlname": "t_switch",
+            "module_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1773.1-1897.10"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.l_mux": {
+          "hide_name": 0,
+          "type": "$scopeinfo",
+          "parameters": {
+            "TYPE": "module"
+          },
+          "attributes": {
+            "cell_module_not_derived": "00000000000000000000000000000001",
+            "cell_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1876.4-1880.3",
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst l_mux",
+            "module": "$paramod$1720aee9e31d00e262e09b8569290b2c9c8b667a\\mux",
+            "module_dynports": "00000000000000000000000000000001",
+            "module_hdlname": "mux",
+            "module_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:289.1-301.10"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.r_mux": {
+          "hide_name": 0,
+          "type": "$scopeinfo",
+          "parameters": {
+            "TYPE": "module"
+          },
+          "attributes": {
+            "cell_module_not_derived": "00000000000000000000000000000001",
+            "cell_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1884.4-1888.3",
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst r_mux",
+            "module": "$paramod$1720aee9e31d00e262e09b8569290b2c9c8b667a\\mux",
+            "module_dynports": "00000000000000000000000000000001",
+            "module_hdlname": "mux",
+            "module_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:289.1-301.10"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst": {
+          "hide_name": 0,
+          "type": "$scopeinfo",
+          "parameters": {
+            "TYPE": "module"
+          },
+          "attributes": {
+            "cell_module_not_derived": "00000000000000000000000000000001",
+            "cell_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1851.4-1872.3",
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst",
+            "module": "$paramod$5ab47fa472e153593d1791aa477c556603066888\\t_route",
+            "module_dynports": "00000000000000000000000000000001",
+            "module_hdlname": "t_route",
+            "module_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1464.1-1772.10"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst.l_counters_inst": {
+          "hide_name": 0,
+          "type": "$scopeinfo",
+          "parameters": {
+            "TYPE": "module"
+          },
+          "attributes": {
+            "cell_module_not_derived": "00000000000000000000000000000001",
+            "cell_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1530.4-1537.3",
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst l_counters_inst",
+            "module": "$paramod$6be54c79259c774d4d83cb2b1a30b8be65c0bb52\\credit_counters_tx",
+            "module_dynports": "00000000000000000000000000000001",
+            "module_hdlname": "credit_counters_tx",
+            "module_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1.1-48.10"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst.r_counters_inst": {
+          "hide_name": 0,
+          "type": "$scopeinfo",
+          "parameters": {
+            "TYPE": "module"
+          },
+          "attributes": {
+            "cell_module_not_derived": "00000000000000000000000000000001",
+            "cell_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1541.4-1548.3",
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst r_counters_inst",
+            "module": "$paramod$6be54c79259c774d4d83cb2b1a30b8be65c0bb52\\credit_counters_tx",
+            "module_dynports": "00000000000000000000000000000001",
+            "module_hdlname": "credit_counters_tx",
+            "module_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1.1-48.10"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst.u0_counters_inst": {
+          "hide_name": 0,
+          "type": "$scopeinfo",
+          "parameters": {
+            "TYPE": "module"
+          },
+          "attributes": {
+            "cell_module_not_derived": "00000000000000000000000000000001",
+            "cell_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1552.4-1559.3",
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst u0_counters_inst",
+            "module": "$paramod$6be54c79259c774d4d83cb2b1a30b8be65c0bb52\\credit_counters_tx",
+            "module_dynports": "00000000000000000000000000000001",
+            "module_hdlname": "credit_counters_tx",
+            "module_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1.1-48.10"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.u0_mux": {
+          "hide_name": 0,
+          "type": "$scopeinfo",
+          "parameters": {
+            "TYPE": "module"
+          },
+          "attributes": {
+            "cell_module_not_derived": "00000000000000000000000000000001",
+            "cell_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1892.4-1896.3",
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst u0_mux",
+            "module": "$paramod$1720aee9e31d00e262e09b8569290b2c9c8b667a\\mux",
+            "module_dynports": "00000000000000000000000000000001",
+            "module_hdlname": "mux",
+            "module_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:289.1-301.10"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.u0_rx_fifos.gen_vc_logic[0].vc_fifo": {
+          "hide_name": 0,
+          "type": "$scopeinfo",
+          "parameters": {
+            "TYPE": "module"
+          },
+          "attributes": {
+            "cell_module_not_derived": "00000000000000000000000000000001",
+            "cell_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:911.12-920.11",
+            "module": "$paramod$d3e76b73c593fd382cc22ef4cf45e461023373e3\\fifo32",
+            "module_dynports": "00000000000000000000000000000001",
+            "module_hdlname": "fifo32",
+            "module_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:49.1-185.10"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.u0_rx_fifos.gen_vc_logic[1].vc_fifo": {
+          "hide_name": 0,
+          "type": "$scopeinfo",
+          "parameters": {
+            "TYPE": "module"
+          },
+          "attributes": {
+            "cell_module_not_derived": "00000000000000000000000000000001",
+            "cell_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:911.12-920.11",
+            "module": "$paramod$d3e76b73c593fd382cc22ef4cf45e461023373e3\\fifo32",
+            "module_dynports": "00000000000000000000000000000001",
+            "module_hdlname": "fifo32",
+            "module_src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:49.1-185.10"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        }
+      },
+      "netnames": {
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:324.13-324.16"
+          }
+        },
+        "dut.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:403.9-403.12",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_leaf_flops[0].leaf_rx_pipe._sv2v_0": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1317.10-1317.17"
+          }
+        },
+        "dut.gen_leaf_flops[0].leaf_rx_pipe.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1325.11-1325.14",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_leaf_flops[0].leaf_rx_pipe.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1326.11-1326.14",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_leaf_flops[0].leaf_tx_pipe._sv2v_0": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1391.10-1391.17"
+          }
+        },
+        "dut.gen_leaf_flops[0].leaf_tx_pipe.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1399.11-1399.14",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_leaf_flops[0].leaf_tx_pipe.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1400.11-1400.14",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_leaf_flops[1].leaf_rx_pipe._sv2v_0": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1317.10-1317.17"
+          }
+        },
+        "dut.gen_leaf_flops[1].leaf_rx_pipe.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1325.11-1325.14",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_leaf_flops[1].leaf_rx_pipe.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1326.11-1326.14",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_leaf_flops[1].leaf_tx_pipe._sv2v_0": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1391.10-1391.17"
+          }
+        },
+        "dut.gen_leaf_flops[1].leaf_tx_pipe.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1399.11-1399.14",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_leaf_flops[1].leaf_tx_pipe.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1400.11-1400.14",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].downwards_if_above_flops[0].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:512.11-512.14",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].downwards_if_above_flops[0].rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:513.11-513.14",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].downwards_if_below_flops[0].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:534.11-534.14",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].downwards_if_below_flops[0].rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:535.11-535.14",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:728.13-728.16",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.l_rx_fifos._sv2v_0": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:751.13-751.20"
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.l_rx_fifos.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:761.14-761.17",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.l_rx_fifos.gen_vc_logic[0].vc_fifo._sv2v_0": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.l_rx_fifos.gen_vc_logic[0].vc_fifo _sv2v_0",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:59.6-59.13"
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.l_rx_fifos.gen_vc_logic[0].vc_fifo.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.l_rx_fifos.gen_vc_logic[0].vc_fifo clk",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:64.13-64.16",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.l_rx_fifos.gen_vc_logic[0].vc_fifo.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.l_rx_fifos.gen_vc_logic[0].vc_fifo rst",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:65.13-65.16",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.l_rx_fifos.gen_vc_logic[1].vc_fifo._sv2v_0": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.l_rx_fifos.gen_vc_logic[1].vc_fifo _sv2v_0",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:59.6-59.13"
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.l_rx_fifos.gen_vc_logic[1].vc_fifo.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.l_rx_fifos.gen_vc_logic[1].vc_fifo clk",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:64.13-64.16",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.l_rx_fifos.gen_vc_logic[1].vc_fifo.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.l_rx_fifos.gen_vc_logic[1].vc_fifo rst",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:65.13-65.16",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.l_rx_fifos.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:762.14-762.17",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.r_rx_fifos._sv2v_0": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:817.13-817.20"
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.r_rx_fifos.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:827.14-827.17",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.r_rx_fifos.gen_vc_logic[0].vc_fifo._sv2v_0": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.r_rx_fifos.gen_vc_logic[0].vc_fifo _sv2v_0",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:59.6-59.13"
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.r_rx_fifos.gen_vc_logic[0].vc_fifo.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.r_rx_fifos.gen_vc_logic[0].vc_fifo clk",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:64.13-64.16",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.r_rx_fifos.gen_vc_logic[0].vc_fifo.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.r_rx_fifos.gen_vc_logic[0].vc_fifo rst",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:65.13-65.16",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.r_rx_fifos.gen_vc_logic[1].vc_fifo._sv2v_0": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.r_rx_fifos.gen_vc_logic[1].vc_fifo _sv2v_0",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:59.6-59.13"
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.r_rx_fifos.gen_vc_logic[1].vc_fifo.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.r_rx_fifos.gen_vc_logic[1].vc_fifo clk",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:64.13-64.16",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.r_rx_fifos.gen_vc_logic[1].vc_fifo.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.r_rx_fifos.gen_vc_logic[1].vc_fifo rst",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:65.13-65.16",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.r_rx_fifos.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:828.14-828.17",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:729.13-729.16",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst clk",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1808.13-1808.16",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst rst",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1809.13-1809.16",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst._sv2v_0": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst _sv2v_0",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1486.6-1486.13"
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst clk",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1498.13-1498.16",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst.l_counters_inst._sv2v_0": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst l_counters_inst _sv2v_0",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:9.6-9.13"
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst.l_counters_inst.i_clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst l_counters_inst i_clk",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:14.13-14.18",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst.l_counters_inst.i_rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst l_counters_inst i_rst",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:15.13-15.18",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst.r_counters_inst._sv2v_0": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst r_counters_inst _sv2v_0",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:9.6-9.13"
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst.r_counters_inst.i_clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst r_counters_inst i_clk",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:14.13-14.18",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst.r_counters_inst.i_rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst r_counters_inst i_rst",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:15.13-15.18",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst rst",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1499.13-1499.16",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst.sv2v_autoblock_1.ii": {
+          "hide_name": 0,
+          "bits": [ "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "signed": 1,
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst sv2v_autoblock_1.ii",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1564.22-1564.24"
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst.sv2v_autoblock_2.ii": {
+          "hide_name": 0,
+          "bits": [ "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "signed": 1,
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst sv2v_autoblock_2.ii",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1739.22-1739.24"
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst.sv2v_autoblock_3.ii": {
+          "hide_name": 0,
+          "bits": [ "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "signed": 1,
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst sv2v_autoblock_3.ii",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1752.22-1752.24"
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst.sv2v_autoblock_4.ii": {
+          "hide_name": 0,
+          "bits": [ "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "signed": 1,
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst sv2v_autoblock_4.ii",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:1765.22-1765.24"
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst.u0_counters_inst._sv2v_0": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst u0_counters_inst _sv2v_0",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:9.6-9.13"
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst.u0_counters_inst.i_clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst u0_counters_inst i_clk",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:14.13-14.18",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst.t_route_inst.u0_counters_inst.i_rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.t_switch_inst t_route_inst u0_counters_inst i_rst",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:15.13-15.18",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.u0_rx_fifos._sv2v_0": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:883.13-883.20"
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.u0_rx_fifos.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:893.14-893.17",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.u0_rx_fifos.gen_vc_logic[0].vc_fifo._sv2v_0": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.u0_rx_fifos.gen_vc_logic[0].vc_fifo _sv2v_0",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:59.6-59.13"
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.u0_rx_fifos.gen_vc_logic[0].vc_fifo.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.u0_rx_fifos.gen_vc_logic[0].vc_fifo clk",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:64.13-64.16",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.u0_rx_fifos.gen_vc_logic[0].vc_fifo.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.u0_rx_fifos.gen_vc_logic[0].vc_fifo rst",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:65.13-65.16",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.u0_rx_fifos.gen_vc_logic[1].vc_fifo._sv2v_0": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.u0_rx_fifos.gen_vc_logic[1].vc_fifo _sv2v_0",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:59.6-59.13"
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.u0_rx_fifos.gen_vc_logic[1].vc_fifo.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.u0_rx_fifos.gen_vc_logic[1].vc_fifo clk",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:64.13-64.16",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.u0_rx_fifos.gen_vc_logic[1].vc_fifo.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "hdlname": "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.u0_rx_fifos.gen_vc_logic[1].vc_fifo rst",
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:65.13-65.16",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_almost_leaves.gen_almost_leaves_loop[0].almost_leaf_t_switch_inst.u0_rx_fifos.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:894.14-894.17",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_flops[0].downwards_pipe._sv2v_0": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:628.11-628.18"
+          }
+        },
+        "dut.gen_levels[0].gen_flops[0].downwards_pipe.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:636.12-636.15",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_flops[0].downwards_pipe.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:637.12-637.15",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_flops[0].upwards_pipe._sv2v_0": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:554.11-554.18"
+          }
+        },
+        "dut.gen_levels[0].gen_flops[0].upwards_pipe.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:562.12-562.15",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].gen_flops[0].upwards_pipe.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:563.12-563.15",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].upwards_if_above_flops[0].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:490.11-490.14",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].upwards_if_above_flops[0].rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:491.11-491.14",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].upwards_if_below_flops[0].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:468.11-468.14",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.gen_levels[0].upwards_if_below_flops[0].rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:469.11-469.14",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.leaf_rx_above_flops[0].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:421.10-421.13",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.leaf_rx_above_flops[0].rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:422.10-422.13",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.leaf_rx_above_flops[1].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:421.10-421.13",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.leaf_rx_above_flops[1].rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:422.10-422.13",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.leaf_tx_above_flops[0].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:443.10-443.13",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.leaf_tx_above_flops[0].rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:444.10-444.13",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.leaf_tx_above_flops[1].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:443.10-443.13",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.leaf_tx_above_flops[1].rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:444.10-444.13",
+            "unused_bits": "0 "
+          }
+        },
+        "dut.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:404.9-404.12",
+            "unused_bits": "0 "
+          }
+        },
+        "if_leaf[0].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:360.9-360.12",
+            "unused_bits": "0 "
+          }
+        },
+        "if_leaf[0].credit_packet": {
+          "hide_name": 0,
+          "bits": [ 49 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:375.9-375.33",
+            "unused_bits": "0 "
+          }
+        },
+        "if_leaf[0].credit_vc_credit_gnt": {
+          "hide_name": 0,
+          "bits": [ 123 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:376.9-376.40",
+            "unused_bits": "0 "
+          }
+        },
+        "if_leaf[0].credit_vc_target": {
+          "hide_name": 0,
+          "bits": [ 45 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:374.9-374.36",
+            "unused_bits": "0 "
+          }
+        },
+        "if_leaf[0].rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:361.9-361.12",
+            "unused_bits": "0 "
+          }
+        },
+        "if_leaf[1].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:360.9-360.12",
+            "unused_bits": "0 "
+          }
+        },
+        "if_leaf[1].credit_packet": {
+          "hide_name": 0,
+          "bits": [ 86 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:378.9-378.33",
+            "unused_bits": "0 "
+          }
+        },
+        "if_leaf[1].credit_vc_credit_gnt": {
+          "hide_name": 0,
+          "bits": [ 125 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:379.9-379.40",
+            "unused_bits": "0 "
+          }
+        },
+        "if_leaf[1].credit_vc_target": {
+          "hide_name": 0,
+          "bits": [ 47 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:377.9-377.36",
+            "unused_bits": "0 "
+          }
+        },
+        "if_leaf[1].rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:361.9-361.12",
+            "unused_bits": "0 "
+          }
+        },
+        "if_root.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:341.9-341.12",
+            "unused_bits": "0 "
+          }
+        },
+        "if_root.credit_packet": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:372.9-372.30",
+            "unused_bits": "0 "
+          }
+        },
+        "if_root.credit_vc_credit_gnt": {
+          "hide_name": 0,
+          "bits": [ 43 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:373.9-373.37",
+            "unused_bits": "0 "
+          }
+        },
+        "if_root.credit_vc_target": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:371.9-371.33",
+            "unused_bits": "0 "
+          }
+        },
+        "if_root.packet": {
+          "hide_name": 0,
+          "bits": [ 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, "0", "0" ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:344.16-344.22",
+            "unused_bits": "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34"
+          }
+        },
+        "if_root.rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:342.9-342.12",
+            "unused_bits": "0 "
+          }
+        },
+        "leaf_credit_packet": {
+          "hide_name": 0,
+          "bits": [ 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:330.78-330.96"
+          }
+        },
+        "leaf_credit_vc_credit_gnt": {
+          "hide_name": 0,
+          "bits": [ 123, 124, 125, 126 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:331.32-331.57"
+          }
+        },
+        "leaf_credit_vc_target": {
+          "hide_name": 0,
+          "bits": [ 45, 46, 47, 48 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:329.32-329.53"
+          }
+        },
+        "root_credit_packet": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:327.72-327.90"
+          }
+        },
+        "root_credit_vc_credit_gnt": {
+          "hide_name": 0,
+          "bits": [ 43, 44 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:328.26-328.51"
+          }
+        },
+        "root_credit_vc_target": {
+          "hide_name": 0,
+          "bits": [ 4, 5 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:326.26-326.47"
+          }
+        },
+        "rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:325.13-325.16"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+
+20. Printing statistics.
+
+=== topology_t_binary_tree_wrap ===
+
+   Number of wires:                  8
+   Number of wire bits:            125
+   Number of public wires:           8
+   Number of public wire bits:     125
+   Number of ports:                  8
+   Number of port bits:            125
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
