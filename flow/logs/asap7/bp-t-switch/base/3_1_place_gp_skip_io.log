@@ -1,0 +1,572 @@
+OpenROAD v2.0-21872-gd51df1dea5 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 24 thread(s).
+source /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/platforms/asap7/liberty_suppressions.tcl
+suppress_message STA 1212
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.054  0.270 ) um
+[INFO GPL-0004] CoreBBox: (  2.052  2.160 ) ( 17.280 17.280 ) um
+[WARNING GPL-0001] ce toplevel port is not placed!
+       Replace will regard ce is placed in (0, 0)
+[WARNING GPL-0001] clk toplevel port is not placed!
+       Replace will regard clk is placed in (0, 0)
+[WARNING GPL-0001] done toplevel port is not placed!
+       Replace will regard done is placed in (0, 0)
+[WARNING GPL-0001] l_i[0] toplevel port is not placed!
+       Replace will regard l_i[0] is placed in (0, 0)
+[WARNING GPL-0001] l_i[10] toplevel port is not placed!
+       Replace will regard l_i[10] is placed in (0, 0)
+[WARNING GPL-0001] l_i[11] toplevel port is not placed!
+       Replace will regard l_i[11] is placed in (0, 0)
+[WARNING GPL-0001] l_i[12] toplevel port is not placed!
+       Replace will regard l_i[12] is placed in (0, 0)
+[WARNING GPL-0001] l_i[13] toplevel port is not placed!
+       Replace will regard l_i[13] is placed in (0, 0)
+[WARNING GPL-0001] l_i[14] toplevel port is not placed!
+       Replace will regard l_i[14] is placed in (0, 0)
+[WARNING GPL-0001] l_i[15] toplevel port is not placed!
+       Replace will regard l_i[15] is placed in (0, 0)
+[WARNING GPL-0001] l_i[16] toplevel port is not placed!
+       Replace will regard l_i[16] is placed in (0, 0)
+[WARNING GPL-0001] l_i[17] toplevel port is not placed!
+       Replace will regard l_i[17] is placed in (0, 0)
+[WARNING GPL-0001] l_i[18] toplevel port is not placed!
+       Replace will regard l_i[18] is placed in (0, 0)
+[WARNING GPL-0001] l_i[19] toplevel port is not placed!
+       Replace will regard l_i[19] is placed in (0, 0)
+[WARNING GPL-0001] l_i[1] toplevel port is not placed!
+       Replace will regard l_i[1] is placed in (0, 0)
+[WARNING GPL-0001] l_i[20] toplevel port is not placed!
+       Replace will regard l_i[20] is placed in (0, 0)
+[WARNING GPL-0001] l_i[21] toplevel port is not placed!
+       Replace will regard l_i[21] is placed in (0, 0)
+[WARNING GPL-0001] l_i[22] toplevel port is not placed!
+       Replace will regard l_i[22] is placed in (0, 0)
+[WARNING GPL-0001] l_i[23] toplevel port is not placed!
+       Replace will regard l_i[23] is placed in (0, 0)
+[WARNING GPL-0001] l_i[24] toplevel port is not placed!
+       Replace will regard l_i[24] is placed in (0, 0)
+[WARNING GPL-0001] l_i[25] toplevel port is not placed!
+       Replace will regard l_i[25] is placed in (0, 0)
+[WARNING GPL-0001] l_i[26] toplevel port is not placed!
+       Replace will regard l_i[26] is placed in (0, 0)
+[WARNING GPL-0001] l_i[27] toplevel port is not placed!
+       Replace will regard l_i[27] is placed in (0, 0)
+[WARNING GPL-0001] l_i[28] toplevel port is not placed!
+       Replace will regard l_i[28] is placed in (0, 0)
+[WARNING GPL-0001] l_i[29] toplevel port is not placed!
+       Replace will regard l_i[29] is placed in (0, 0)
+[WARNING GPL-0001] l_i[2] toplevel port is not placed!
+       Replace will regard l_i[2] is placed in (0, 0)
+[WARNING GPL-0001] l_i[30] toplevel port is not placed!
+       Replace will regard l_i[30] is placed in (0, 0)
+[WARNING GPL-0001] l_i[31] toplevel port is not placed!
+       Replace will regard l_i[31] is placed in (0, 0)
+[WARNING GPL-0001] l_i[32] toplevel port is not placed!
+       Replace will regard l_i[32] is placed in (0, 0)
+[WARNING GPL-0001] l_i[33] toplevel port is not placed!
+       Replace will regard l_i[33] is placed in (0, 0)
+[WARNING GPL-0001] l_i[34] toplevel port is not placed!
+       Replace will regard l_i[34] is placed in (0, 0)
+[WARNING GPL-0001] l_i[35] toplevel port is not placed!
+       Replace will regard l_i[35] is placed in (0, 0)
+[WARNING GPL-0001] l_i[3] toplevel port is not placed!
+       Replace will regard l_i[3] is placed in (0, 0)
+[WARNING GPL-0001] l_i[4] toplevel port is not placed!
+       Replace will regard l_i[4] is placed in (0, 0)
+[WARNING GPL-0001] l_i[5] toplevel port is not placed!
+       Replace will regard l_i[5] is placed in (0, 0)
+[WARNING GPL-0001] l_i[6] toplevel port is not placed!
+       Replace will regard l_i[6] is placed in (0, 0)
+[WARNING GPL-0001] l_i[7] toplevel port is not placed!
+       Replace will regard l_i[7] is placed in (0, 0)
+[WARNING GPL-0001] l_i[8] toplevel port is not placed!
+       Replace will regard l_i[8] is placed in (0, 0)
+[WARNING GPL-0001] l_i[9] toplevel port is not placed!
+       Replace will regard l_i[9] is placed in (0, 0)
+[WARNING GPL-0001] l_i_bp toplevel port is not placed!
+       Replace will regard l_i_bp is placed in (0, 0)
+[WARNING GPL-0001] l_i_v toplevel port is not placed!
+       Replace will regard l_i_v is placed in (0, 0)
+[WARNING GPL-0001] l_o[0] toplevel port is not placed!
+       Replace will regard l_o[0] is placed in (0, 0)
+[WARNING GPL-0001] l_o[10] toplevel port is not placed!
+       Replace will regard l_o[10] is placed in (0, 0)
+[WARNING GPL-0001] l_o[11] toplevel port is not placed!
+       Replace will regard l_o[11] is placed in (0, 0)
+[WARNING GPL-0001] l_o[12] toplevel port is not placed!
+       Replace will regard l_o[12] is placed in (0, 0)
+[WARNING GPL-0001] l_o[13] toplevel port is not placed!
+       Replace will regard l_o[13] is placed in (0, 0)
+[WARNING GPL-0001] l_o[14] toplevel port is not placed!
+       Replace will regard l_o[14] is placed in (0, 0)
+[WARNING GPL-0001] l_o[15] toplevel port is not placed!
+       Replace will regard l_o[15] is placed in (0, 0)
+[WARNING GPL-0001] l_o[16] toplevel port is not placed!
+       Replace will regard l_o[16] is placed in (0, 0)
+[WARNING GPL-0001] l_o[17] toplevel port is not placed!
+       Replace will regard l_o[17] is placed in (0, 0)
+[WARNING GPL-0001] l_o[18] toplevel port is not placed!
+       Replace will regard l_o[18] is placed in (0, 0)
+[WARNING GPL-0001] l_o[19] toplevel port is not placed!
+       Replace will regard l_o[19] is placed in (0, 0)
+[WARNING GPL-0001] l_o[1] toplevel port is not placed!
+       Replace will regard l_o[1] is placed in (0, 0)
+[WARNING GPL-0001] l_o[20] toplevel port is not placed!
+       Replace will regard l_o[20] is placed in (0, 0)
+[WARNING GPL-0001] l_o[21] toplevel port is not placed!
+       Replace will regard l_o[21] is placed in (0, 0)
+[WARNING GPL-0001] l_o[22] toplevel port is not placed!
+       Replace will regard l_o[22] is placed in (0, 0)
+[WARNING GPL-0001] l_o[23] toplevel port is not placed!
+       Replace will regard l_o[23] is placed in (0, 0)
+[WARNING GPL-0001] l_o[24] toplevel port is not placed!
+       Replace will regard l_o[24] is placed in (0, 0)
+[WARNING GPL-0001] l_o[25] toplevel port is not placed!
+       Replace will regard l_o[25] is placed in (0, 0)
+[WARNING GPL-0001] l_o[26] toplevel port is not placed!
+       Replace will regard l_o[26] is placed in (0, 0)
+[WARNING GPL-0001] l_o[27] toplevel port is not placed!
+       Replace will regard l_o[27] is placed in (0, 0)
+[WARNING GPL-0001] l_o[28] toplevel port is not placed!
+       Replace will regard l_o[28] is placed in (0, 0)
+[WARNING GPL-0001] l_o[29] toplevel port is not placed!
+       Replace will regard l_o[29] is placed in (0, 0)
+[WARNING GPL-0001] l_o[2] toplevel port is not placed!
+       Replace will regard l_o[2] is placed in (0, 0)
+[WARNING GPL-0001] l_o[30] toplevel port is not placed!
+       Replace will regard l_o[30] is placed in (0, 0)
+[WARNING GPL-0001] l_o[31] toplevel port is not placed!
+       Replace will regard l_o[31] is placed in (0, 0)
+[WARNING GPL-0001] l_o[32] toplevel port is not placed!
+       Replace will regard l_o[32] is placed in (0, 0)
+[WARNING GPL-0001] l_o[33] toplevel port is not placed!
+       Replace will regard l_o[33] is placed in (0, 0)
+[WARNING GPL-0001] l_o[34] toplevel port is not placed!
+       Replace will regard l_o[34] is placed in (0, 0)
+[WARNING GPL-0001] l_o[35] toplevel port is not placed!
+       Replace will regard l_o[35] is placed in (0, 0)
+[WARNING GPL-0001] l_o[3] toplevel port is not placed!
+       Replace will regard l_o[3] is placed in (0, 0)
+[WARNING GPL-0001] l_o[4] toplevel port is not placed!
+       Replace will regard l_o[4] is placed in (0, 0)
+[WARNING GPL-0001] l_o[5] toplevel port is not placed!
+       Replace will regard l_o[5] is placed in (0, 0)
+[WARNING GPL-0001] l_o[6] toplevel port is not placed!
+       Replace will regard l_o[6] is placed in (0, 0)
+[WARNING GPL-0001] l_o[7] toplevel port is not placed!
+       Replace will regard l_o[7] is placed in (0, 0)
+[WARNING GPL-0001] l_o[8] toplevel port is not placed!
+       Replace will regard l_o[8] is placed in (0, 0)
+[WARNING GPL-0001] l_o[9] toplevel port is not placed!
+       Replace will regard l_o[9] is placed in (0, 0)
+[WARNING GPL-0001] l_o_bp toplevel port is not placed!
+       Replace will regard l_o_bp is placed in (0, 0)
+[WARNING GPL-0001] l_o_v toplevel port is not placed!
+       Replace will regard l_o_v is placed in (0, 0)
+[WARNING GPL-0001] r_i[0] toplevel port is not placed!
+       Replace will regard r_i[0] is placed in (0, 0)
+[WARNING GPL-0001] r_i[10] toplevel port is not placed!
+       Replace will regard r_i[10] is placed in (0, 0)
+[WARNING GPL-0001] r_i[11] toplevel port is not placed!
+       Replace will regard r_i[11] is placed in (0, 0)
+[WARNING GPL-0001] r_i[12] toplevel port is not placed!
+       Replace will regard r_i[12] is placed in (0, 0)
+[WARNING GPL-0001] r_i[13] toplevel port is not placed!
+       Replace will regard r_i[13] is placed in (0, 0)
+[WARNING GPL-0001] r_i[14] toplevel port is not placed!
+       Replace will regard r_i[14] is placed in (0, 0)
+[WARNING GPL-0001] r_i[15] toplevel port is not placed!
+       Replace will regard r_i[15] is placed in (0, 0)
+[WARNING GPL-0001] r_i[16] toplevel port is not placed!
+       Replace will regard r_i[16] is placed in (0, 0)
+[WARNING GPL-0001] r_i[17] toplevel port is not placed!
+       Replace will regard r_i[17] is placed in (0, 0)
+[WARNING GPL-0001] r_i[18] toplevel port is not placed!
+       Replace will regard r_i[18] is placed in (0, 0)
+[WARNING GPL-0001] r_i[19] toplevel port is not placed!
+       Replace will regard r_i[19] is placed in (0, 0)
+[WARNING GPL-0001] r_i[1] toplevel port is not placed!
+       Replace will regard r_i[1] is placed in (0, 0)
+[WARNING GPL-0001] r_i[20] toplevel port is not placed!
+       Replace will regard r_i[20] is placed in (0, 0)
+[WARNING GPL-0001] r_i[21] toplevel port is not placed!
+       Replace will regard r_i[21] is placed in (0, 0)
+[WARNING GPL-0001] r_i[22] toplevel port is not placed!
+       Replace will regard r_i[22] is placed in (0, 0)
+[WARNING GPL-0001] r_i[23] toplevel port is not placed!
+       Replace will regard r_i[23] is placed in (0, 0)
+[WARNING GPL-0001] r_i[24] toplevel port is not placed!
+       Replace will regard r_i[24] is placed in (0, 0)
+[WARNING GPL-0001] r_i[25] toplevel port is not placed!
+       Replace will regard r_i[25] is placed in (0, 0)
+[WARNING GPL-0001] r_i[26] toplevel port is not placed!
+       Replace will regard r_i[26] is placed in (0, 0)
+[WARNING GPL-0001] r_i[27] toplevel port is not placed!
+       Replace will regard r_i[27] is placed in (0, 0)
+[WARNING GPL-0001] r_i[28] toplevel port is not placed!
+       Replace will regard r_i[28] is placed in (0, 0)
+[WARNING GPL-0001] r_i[29] toplevel port is not placed!
+       Replace will regard r_i[29] is placed in (0, 0)
+[WARNING GPL-0001] r_i[2] toplevel port is not placed!
+       Replace will regard r_i[2] is placed in (0, 0)
+[WARNING GPL-0001] r_i[30] toplevel port is not placed!
+       Replace will regard r_i[30] is placed in (0, 0)
+[WARNING GPL-0001] r_i[31] toplevel port is not placed!
+       Replace will regard r_i[31] is placed in (0, 0)
+[WARNING GPL-0001] r_i[32] toplevel port is not placed!
+       Replace will regard r_i[32] is placed in (0, 0)
+[WARNING GPL-0001] r_i[33] toplevel port is not placed!
+       Replace will regard r_i[33] is placed in (0, 0)
+[WARNING GPL-0001] r_i[34] toplevel port is not placed!
+       Replace will regard r_i[34] is placed in (0, 0)
+[WARNING GPL-0001] r_i[35] toplevel port is not placed!
+       Replace will regard r_i[35] is placed in (0, 0)
+[WARNING GPL-0001] r_i[3] toplevel port is not placed!
+       Replace will regard r_i[3] is placed in (0, 0)
+[WARNING GPL-0001] r_i[4] toplevel port is not placed!
+       Replace will regard r_i[4] is placed in (0, 0)
+[WARNING GPL-0001] r_i[5] toplevel port is not placed!
+       Replace will regard r_i[5] is placed in (0, 0)
+[WARNING GPL-0001] r_i[6] toplevel port is not placed!
+       Replace will regard r_i[6] is placed in (0, 0)
+[WARNING GPL-0001] r_i[7] toplevel port is not placed!
+       Replace will regard r_i[7] is placed in (0, 0)
+[WARNING GPL-0001] r_i[8] toplevel port is not placed!
+       Replace will regard r_i[8] is placed in (0, 0)
+[WARNING GPL-0001] r_i[9] toplevel port is not placed!
+       Replace will regard r_i[9] is placed in (0, 0)
+[WARNING GPL-0001] r_i_bp toplevel port is not placed!
+       Replace will regard r_i_bp is placed in (0, 0)
+[WARNING GPL-0001] r_i_v toplevel port is not placed!
+       Replace will regard r_i_v is placed in (0, 0)
+[WARNING GPL-0001] r_o[0] toplevel port is not placed!
+       Replace will regard r_o[0] is placed in (0, 0)
+[WARNING GPL-0001] r_o[10] toplevel port is not placed!
+       Replace will regard r_o[10] is placed in (0, 0)
+[WARNING GPL-0001] r_o[11] toplevel port is not placed!
+       Replace will regard r_o[11] is placed in (0, 0)
+[WARNING GPL-0001] r_o[12] toplevel port is not placed!
+       Replace will regard r_o[12] is placed in (0, 0)
+[WARNING GPL-0001] r_o[13] toplevel port is not placed!
+       Replace will regard r_o[13] is placed in (0, 0)
+[WARNING GPL-0001] r_o[14] toplevel port is not placed!
+       Replace will regard r_o[14] is placed in (0, 0)
+[WARNING GPL-0001] r_o[15] toplevel port is not placed!
+       Replace will regard r_o[15] is placed in (0, 0)
+[WARNING GPL-0001] r_o[16] toplevel port is not placed!
+       Replace will regard r_o[16] is placed in (0, 0)
+[WARNING GPL-0001] r_o[17] toplevel port is not placed!
+       Replace will regard r_o[17] is placed in (0, 0)
+[WARNING GPL-0001] r_o[18] toplevel port is not placed!
+       Replace will regard r_o[18] is placed in (0, 0)
+[WARNING GPL-0001] r_o[19] toplevel port is not placed!
+       Replace will regard r_o[19] is placed in (0, 0)
+[WARNING GPL-0001] r_o[1] toplevel port is not placed!
+       Replace will regard r_o[1] is placed in (0, 0)
+[WARNING GPL-0001] r_o[20] toplevel port is not placed!
+       Replace will regard r_o[20] is placed in (0, 0)
+[WARNING GPL-0001] r_o[21] toplevel port is not placed!
+       Replace will regard r_o[21] is placed in (0, 0)
+[WARNING GPL-0001] r_o[22] toplevel port is not placed!
+       Replace will regard r_o[22] is placed in (0, 0)
+[WARNING GPL-0001] r_o[23] toplevel port is not placed!
+       Replace will regard r_o[23] is placed in (0, 0)
+[WARNING GPL-0001] r_o[24] toplevel port is not placed!
+       Replace will regard r_o[24] is placed in (0, 0)
+[WARNING GPL-0001] r_o[25] toplevel port is not placed!
+       Replace will regard r_o[25] is placed in (0, 0)
+[WARNING GPL-0001] r_o[26] toplevel port is not placed!
+       Replace will regard r_o[26] is placed in (0, 0)
+[WARNING GPL-0001] r_o[27] toplevel port is not placed!
+       Replace will regard r_o[27] is placed in (0, 0)
+[WARNING GPL-0001] r_o[28] toplevel port is not placed!
+       Replace will regard r_o[28] is placed in (0, 0)
+[WARNING GPL-0001] r_o[29] toplevel port is not placed!
+       Replace will regard r_o[29] is placed in (0, 0)
+[WARNING GPL-0001] r_o[2] toplevel port is not placed!
+       Replace will regard r_o[2] is placed in (0, 0)
+[WARNING GPL-0001] r_o[30] toplevel port is not placed!
+       Replace will regard r_o[30] is placed in (0, 0)
+[WARNING GPL-0001] r_o[31] toplevel port is not placed!
+       Replace will regard r_o[31] is placed in (0, 0)
+[WARNING GPL-0001] r_o[32] toplevel port is not placed!
+       Replace will regard r_o[32] is placed in (0, 0)
+[WARNING GPL-0001] r_o[33] toplevel port is not placed!
+       Replace will regard r_o[33] is placed in (0, 0)
+[WARNING GPL-0001] r_o[34] toplevel port is not placed!
+       Replace will regard r_o[34] is placed in (0, 0)
+[WARNING GPL-0001] r_o[35] toplevel port is not placed!
+       Replace will regard r_o[35] is placed in (0, 0)
+[WARNING GPL-0001] r_o[3] toplevel port is not placed!
+       Replace will regard r_o[3] is placed in (0, 0)
+[WARNING GPL-0001] r_o[4] toplevel port is not placed!
+       Replace will regard r_o[4] is placed in (0, 0)
+[WARNING GPL-0001] r_o[5] toplevel port is not placed!
+       Replace will regard r_o[5] is placed in (0, 0)
+[WARNING GPL-0001] r_o[6] toplevel port is not placed!
+       Replace will regard r_o[6] is placed in (0, 0)
+[WARNING GPL-0001] r_o[7] toplevel port is not placed!
+       Replace will regard r_o[7] is placed in (0, 0)
+[WARNING GPL-0001] r_o[8] toplevel port is not placed!
+       Replace will regard r_o[8] is placed in (0, 0)
+[WARNING GPL-0001] r_o[9] toplevel port is not placed!
+       Replace will regard r_o[9] is placed in (0, 0)
+[WARNING GPL-0001] r_o_bp toplevel port is not placed!
+       Replace will regard r_o_bp is placed in (0, 0)
+[WARNING GPL-0001] r_o_v toplevel port is not placed!
+       Replace will regard r_o_v is placed in (0, 0)
+[WARNING GPL-0001] rst toplevel port is not placed!
+       Replace will regard rst is placed in (0, 0)
+[WARNING GPL-0001] u0_i[0] toplevel port is not placed!
+       Replace will regard u0_i[0] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[10] toplevel port is not placed!
+       Replace will regard u0_i[10] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[11] toplevel port is not placed!
+       Replace will regard u0_i[11] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[12] toplevel port is not placed!
+       Replace will regard u0_i[12] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[13] toplevel port is not placed!
+       Replace will regard u0_i[13] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[14] toplevel port is not placed!
+       Replace will regard u0_i[14] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[15] toplevel port is not placed!
+       Replace will regard u0_i[15] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[16] toplevel port is not placed!
+       Replace will regard u0_i[16] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[17] toplevel port is not placed!
+       Replace will regard u0_i[17] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[18] toplevel port is not placed!
+       Replace will regard u0_i[18] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[19] toplevel port is not placed!
+       Replace will regard u0_i[19] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[1] toplevel port is not placed!
+       Replace will regard u0_i[1] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[20] toplevel port is not placed!
+       Replace will regard u0_i[20] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[21] toplevel port is not placed!
+       Replace will regard u0_i[21] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[22] toplevel port is not placed!
+       Replace will regard u0_i[22] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[23] toplevel port is not placed!
+       Replace will regard u0_i[23] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[24] toplevel port is not placed!
+       Replace will regard u0_i[24] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[25] toplevel port is not placed!
+       Replace will regard u0_i[25] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[26] toplevel port is not placed!
+       Replace will regard u0_i[26] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[27] toplevel port is not placed!
+       Replace will regard u0_i[27] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[28] toplevel port is not placed!
+       Replace will regard u0_i[28] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[29] toplevel port is not placed!
+       Replace will regard u0_i[29] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[2] toplevel port is not placed!
+       Replace will regard u0_i[2] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[30] toplevel port is not placed!
+       Replace will regard u0_i[30] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[31] toplevel port is not placed!
+       Replace will regard u0_i[31] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[32] toplevel port is not placed!
+       Replace will regard u0_i[32] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[33] toplevel port is not placed!
+       Replace will regard u0_i[33] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[34] toplevel port is not placed!
+       Replace will regard u0_i[34] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[35] toplevel port is not placed!
+       Replace will regard u0_i[35] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[3] toplevel port is not placed!
+       Replace will regard u0_i[3] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[4] toplevel port is not placed!
+       Replace will regard u0_i[4] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[5] toplevel port is not placed!
+       Replace will regard u0_i[5] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[6] toplevel port is not placed!
+       Replace will regard u0_i[6] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[7] toplevel port is not placed!
+       Replace will regard u0_i[7] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[8] toplevel port is not placed!
+       Replace will regard u0_i[8] is placed in (0, 0)
+[WARNING GPL-0001] u0_i[9] toplevel port is not placed!
+       Replace will regard u0_i[9] is placed in (0, 0)
+[WARNING GPL-0001] u0_i_bp toplevel port is not placed!
+       Replace will regard u0_i_bp is placed in (0, 0)
+[WARNING GPL-0001] u0_i_v toplevel port is not placed!
+       Replace will regard u0_i_v is placed in (0, 0)
+[WARNING GPL-0001] u0_o[0] toplevel port is not placed!
+       Replace will regard u0_o[0] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[10] toplevel port is not placed!
+       Replace will regard u0_o[10] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[11] toplevel port is not placed!
+       Replace will regard u0_o[11] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[12] toplevel port is not placed!
+       Replace will regard u0_o[12] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[13] toplevel port is not placed!
+       Replace will regard u0_o[13] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[14] toplevel port is not placed!
+       Replace will regard u0_o[14] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[15] toplevel port is not placed!
+       Replace will regard u0_o[15] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[16] toplevel port is not placed!
+       Replace will regard u0_o[16] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[17] toplevel port is not placed!
+       Replace will regard u0_o[17] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[18] toplevel port is not placed!
+       Replace will regard u0_o[18] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[19] toplevel port is not placed!
+       Replace will regard u0_o[19] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[1] toplevel port is not placed!
+       Replace will regard u0_o[1] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[20] toplevel port is not placed!
+       Replace will regard u0_o[20] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[21] toplevel port is not placed!
+       Replace will regard u0_o[21] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[22] toplevel port is not placed!
+       Replace will regard u0_o[22] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[23] toplevel port is not placed!
+       Replace will regard u0_o[23] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[24] toplevel port is not placed!
+       Replace will regard u0_o[24] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[25] toplevel port is not placed!
+       Replace will regard u0_o[25] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[26] toplevel port is not placed!
+       Replace will regard u0_o[26] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[27] toplevel port is not placed!
+       Replace will regard u0_o[27] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[28] toplevel port is not placed!
+       Replace will regard u0_o[28] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[29] toplevel port is not placed!
+       Replace will regard u0_o[29] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[2] toplevel port is not placed!
+       Replace will regard u0_o[2] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[30] toplevel port is not placed!
+       Replace will regard u0_o[30] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[31] toplevel port is not placed!
+       Replace will regard u0_o[31] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[32] toplevel port is not placed!
+       Replace will regard u0_o[32] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[33] toplevel port is not placed!
+       Replace will regard u0_o[33] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[34] toplevel port is not placed!
+       Replace will regard u0_o[34] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[35] toplevel port is not placed!
+       Replace will regard u0_o[35] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[3] toplevel port is not placed!
+       Replace will regard u0_o[3] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[4] toplevel port is not placed!
+       Replace will regard u0_o[4] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[5] toplevel port is not placed!
+       Replace will regard u0_o[5] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[6] toplevel port is not placed!
+       Replace will regard u0_o[6] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[7] toplevel port is not placed!
+       Replace will regard u0_o[7] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[8] toplevel port is not placed!
+       Replace will regard u0_o[8] is placed in (0, 0)
+[WARNING GPL-0001] u0_o[9] toplevel port is not placed!
+       Replace will regard u0_o[9] is placed in (0, 0)
+[WARNING GPL-0001] u0_o_bp toplevel port is not placed!
+       Replace will regard u0_o_bp is placed in (0, 0)
+[WARNING GPL-0001] u0_o_v toplevel port is not placed!
+       Replace will regard u0_o_v is placed in (0, 0)
+[INFO GPL-0006] Number of instances:               911
+[INFO GPL-0007] Movable instances:                 799
+[INFO GPL-0008] Fixed instances:                   112
+[INFO GPL-0009] Dummy instances:                     0
+[INFO GPL-0010] Number of nets:                    916
+[INFO GPL-0011] Number of pins:                   2949
+[INFO GPL-0012] Die BBox:  (  0.000  0.000 ) ( 19.308 19.308 ) um
+[INFO GPL-0013] Core BBox: (  2.052  2.160 ) ( 17.280 17.280 ) um
+[INFO GPL-0016] Core area:                     230.247 um^2
+[INFO GPL-0017] Fixed instances area:            3.266 um^2
+[INFO GPL-0018] Movable instances area:         93.735 um^2
+[INFO GPL-0019] Utilization:                    41.296 %
+[INFO GPL-0020] Standard cells area:            93.735 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[INFO GPL-0023] Placement target density:       1.0000
+[INFO GPL-0024] Movable insts average area:      0.117 um^2
+[INFO GPL-0025] Ideal bin area:                  0.117 um^2
+[INFO GPL-0026] Ideal bin count:                  1962
+[INFO GPL-0027] Total bin area:                230.247 um^2
+[INFO GPL-0028] Bin count (X, Y):          32 ,     32
+[INFO GPL-0029] Bin size (W * H):       0.476 *  0.472 um
+[INFO GPL-0030] Number of bins:                   1024
+Placement density is 0.5459999895095825, computed from PLACE_DENSITY_LB_ADDON 0.20 and lower bound 0.41999998688697815
+global_placement -skip_io -density 0.5459999895095825 -pad_left 0 -pad_right 0
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.054  0.270 ) um
+[INFO GPL-0004] CoreBBox: (  2.052  2.160 ) ( 17.280 17.280 ) um
+[INFO GPL-0006] Number of instances:               911
+[INFO GPL-0007] Movable instances:                 799
+[INFO GPL-0008] Fixed instances:                   112
+[INFO GPL-0009] Dummy instances:                     0
+[INFO GPL-0010] Number of nets:                    916
+[INFO GPL-0011] Number of pins:                   2717
+[INFO GPL-0012] Die BBox:  (  0.000  0.000 ) ( 19.308 19.308 ) um
+[INFO GPL-0013] Core BBox: (  2.052  2.160 ) ( 17.280 17.280 ) um
+[INFO GPL-0016] Core area:                     230.247 um^2
+[INFO GPL-0017] Fixed instances area:            3.266 um^2
+[INFO GPL-0018] Movable instances area:         93.735 um^2
+[INFO GPL-0019] Utilization:                    41.296 %
+[INFO GPL-0020] Standard cells area:            93.735 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[INFO GPL-0023] Placement target density:       0.5460
+[INFO GPL-0024] Movable insts average area:      0.117 um^2
+[INFO GPL-0025] Ideal bin area:                  0.215 um^2
+[INFO GPL-0026] Ideal bin count:                  1071
+[INFO GPL-0027] Total bin area:                230.247 um^2
+[INFO GPL-0028] Bin count (X, Y):          32 ,     32
+[INFO GPL-0029] Bin size (W * H):       0.476 *  0.472 um
+[INFO GPL-0030] Number of bins:                   1024
+[INFO GPL-0031] HPWL: Half-Perimeter Wirelength
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+        1 |   0.9665 |  5.210330e+05 |   +0.00% |  2.99e-12 |      
+       10 |   0.9878 |  1.365850e+05 |  -73.79% |  4.64e-12 |      
+       20 |   0.9881 |  1.266760e+05 |   -7.25% |  7.56e-12 |      
+       30 |   0.9882 |  1.252760e+05 |   -1.11% |  1.23e-11 |      
+       40 |   0.9881 |  1.250110e+05 |   -0.21% |  2.01e-11 |      
+       50 |   0.9881 |  1.249600e+05 |   -0.04% |  3.27e-11 |      
+       60 |   0.9880 |  1.252380e+05 |   +0.22% |  5.32e-11 |      
+       70 |   0.9878 |  1.263100e+05 |   +0.86% |  8.67e-11 |      
+       80 |   0.9869 |  1.285540e+05 |   +1.78% |  1.41e-10 |      
+       90 |   0.9844 |  1.334150e+05 |   +3.78% |  2.30e-10 |      
+      100 |   0.9830 |  1.447750e+05 |   +8.51% |  3.75e-10 |      
+      110 |   0.9797 |  1.668270e+05 |  +15.23% |  6.10e-10 |      
+      120 |   0.9752 |  2.026120e+05 |  +21.45% |  9.94e-10 |      
+      130 |   0.9502 |  2.721200e+05 |  +34.31% |  1.62e-09 |      
+      140 |   0.9104 |  3.510410e+05 |  +29.00% |  2.64e-09 |      
+      150 |   0.8918 |  3.800730e+05 |   +8.27% |  4.30e-09 |      
+      160 |   0.8725 |  4.297920e+05 |  +13.08% |  7.00e-09 |      
+      170 |   0.8291 |  5.021780e+05 |  +16.84% |  1.14e-08 |      
+      180 |   0.8005 |  5.512690e+05 |   +9.78% |  1.86e-08 |      
+      190 |   0.7575 |  6.161430e+05 |  +11.77% |  3.03e-08 |      
+      200 |   0.7171 |  6.835320e+05 |  +10.94% |  4.93e-08 |      
+      210 |   0.6770 |  7.480470e+05 |   +9.44% |  8.03e-08 |      
+      220 |   0.6286 |  8.107830e+05 |   +8.39% |  1.31e-07 |      
+      230 |   0.5819 |  8.696490e+05 |   +7.26% |  2.13e-07 |      
+      240 |   0.5330 |  9.323100e+05 |   +7.21% |  3.47e-07 |      
+      250 |   0.4857 |  9.820380e+05 |   +5.33% |  5.65e-07 |      
+      260 |   0.4296 |  1.022879e+06 |   +4.16% |  9.20e-07 |      
+      270 |   0.3822 |  1.049496e+06 |   +2.60% |  1.50e-06 |      
+      280 |   0.3477 |  1.062291e+06 |   +1.22% |  2.42e-06 |      
+      290 |   0.3144 |  1.074375e+06 |   +1.14% |  3.56e-06 |      
+      300 |   0.2920 |  1.085624e+06 |   +1.05% |  5.25e-06 |      
+      310 |   0.2572 |  1.090331e+06 |   +0.43% |  7.73e-06 |      
+      320 |   0.2159 |  1.091919e+06 |   +0.15% |  1.14e-05 |      
+      330 |   0.1868 |  1.092602e+06 |   +0.06% |  1.68e-05 |      
+      340 |   0.1540 |  1.095031e+06 |   +0.22% |  2.47e-05 |      
+      350 |   0.1346 |  1.097180e+06 |   +0.20% |  3.64e-05 |      
+      360 |   0.1189 |  1.102554e+06 |   +0.49% |  5.36e-05 |      
+      370 |   0.1045 |  1.109910e+06 |   +0.67% |  7.90e-05 |      
+[INFO GPL-1001] Finished with Overflow: 0.097768
+[INFO GPL-1002] Placed Cell Area               93.7348
+[INFO GPL-1003] Available Free Area           226.9814
+[INFO GPL-1004] Minimum Feasible Density        0.4200 (cell_area / free_area)
+[INFO GPL-1006]   Suggested Target Densities:
+[INFO GPL-1007]     - For 90% usage of free space: 0.4588
+[INFO GPL-1008]     - For 80% usage of free space: 0.5162
+Elapsed time: 0:01.02[h:]min:sec. CPU time: user 3.68 sys 0.04 (363%). Peak memory: 191000KB.

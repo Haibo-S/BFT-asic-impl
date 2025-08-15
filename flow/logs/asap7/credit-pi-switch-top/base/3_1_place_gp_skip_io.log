@@ -1,0 +1,450 @@
+OpenROAD v2.0-21872-gd51df1dea5 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 24 thread(s).
+source /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/platforms/asap7/liberty_suppressions.tcl
+suppress_message STA 1212
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.054  0.270 ) um
+[INFO GPL-0004] CoreBBox: (  2.052  2.160 ) ( 131.652 131.490 ) um
+[WARNING GPL-0001] clk toplevel port is not placed!
+       Replace will regard clk is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[0] toplevel port is not placed!
+       Replace will regard l_credit_packet[0] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[10] toplevel port is not placed!
+       Replace will regard l_credit_packet[10] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[11] toplevel port is not placed!
+       Replace will regard l_credit_packet[11] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[12] toplevel port is not placed!
+       Replace will regard l_credit_packet[12] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[13] toplevel port is not placed!
+       Replace will regard l_credit_packet[13] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[14] toplevel port is not placed!
+       Replace will regard l_credit_packet[14] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[15] toplevel port is not placed!
+       Replace will regard l_credit_packet[15] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[16] toplevel port is not placed!
+       Replace will regard l_credit_packet[16] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[17] toplevel port is not placed!
+       Replace will regard l_credit_packet[17] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[18] toplevel port is not placed!
+       Replace will regard l_credit_packet[18] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[19] toplevel port is not placed!
+       Replace will regard l_credit_packet[19] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[1] toplevel port is not placed!
+       Replace will regard l_credit_packet[1] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[20] toplevel port is not placed!
+       Replace will regard l_credit_packet[20] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[21] toplevel port is not placed!
+       Replace will regard l_credit_packet[21] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[22] toplevel port is not placed!
+       Replace will regard l_credit_packet[22] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[23] toplevel port is not placed!
+       Replace will regard l_credit_packet[23] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[24] toplevel port is not placed!
+       Replace will regard l_credit_packet[24] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[25] toplevel port is not placed!
+       Replace will regard l_credit_packet[25] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[26] toplevel port is not placed!
+       Replace will regard l_credit_packet[26] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[27] toplevel port is not placed!
+       Replace will regard l_credit_packet[27] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[28] toplevel port is not placed!
+       Replace will regard l_credit_packet[28] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[29] toplevel port is not placed!
+       Replace will regard l_credit_packet[29] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[2] toplevel port is not placed!
+       Replace will regard l_credit_packet[2] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[30] toplevel port is not placed!
+       Replace will regard l_credit_packet[30] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[31] toplevel port is not placed!
+       Replace will regard l_credit_packet[31] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[32] toplevel port is not placed!
+       Replace will regard l_credit_packet[32] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[33] toplevel port is not placed!
+       Replace will regard l_credit_packet[33] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[34] toplevel port is not placed!
+       Replace will regard l_credit_packet[34] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[35] toplevel port is not placed!
+       Replace will regard l_credit_packet[35] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[36] toplevel port is not placed!
+       Replace will regard l_credit_packet[36] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[3] toplevel port is not placed!
+       Replace will regard l_credit_packet[3] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[4] toplevel port is not placed!
+       Replace will regard l_credit_packet[4] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[5] toplevel port is not placed!
+       Replace will regard l_credit_packet[5] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[6] toplevel port is not placed!
+       Replace will regard l_credit_packet[6] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[7] toplevel port is not placed!
+       Replace will regard l_credit_packet[7] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[8] toplevel port is not placed!
+       Replace will regard l_credit_packet[8] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_packet[9] toplevel port is not placed!
+       Replace will regard l_credit_packet[9] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_vc_credit_gnt[0] toplevel port is not placed!
+       Replace will regard l_credit_vc_credit_gnt[0] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_vc_credit_gnt[1] toplevel port is not placed!
+       Replace will regard l_credit_vc_credit_gnt[1] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_vc_target[0] toplevel port is not placed!
+       Replace will regard l_credit_vc_target[0] is placed in (0, 0)
+[WARNING GPL-0001] l_credit_vc_target[1] toplevel port is not placed!
+       Replace will regard l_credit_vc_target[1] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[0] toplevel port is not placed!
+       Replace will regard r_credit_packet[0] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[10] toplevel port is not placed!
+       Replace will regard r_credit_packet[10] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[11] toplevel port is not placed!
+       Replace will regard r_credit_packet[11] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[12] toplevel port is not placed!
+       Replace will regard r_credit_packet[12] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[13] toplevel port is not placed!
+       Replace will regard r_credit_packet[13] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[14] toplevel port is not placed!
+       Replace will regard r_credit_packet[14] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[15] toplevel port is not placed!
+       Replace will regard r_credit_packet[15] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[16] toplevel port is not placed!
+       Replace will regard r_credit_packet[16] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[17] toplevel port is not placed!
+       Replace will regard r_credit_packet[17] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[18] toplevel port is not placed!
+       Replace will regard r_credit_packet[18] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[19] toplevel port is not placed!
+       Replace will regard r_credit_packet[19] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[1] toplevel port is not placed!
+       Replace will regard r_credit_packet[1] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[20] toplevel port is not placed!
+       Replace will regard r_credit_packet[20] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[21] toplevel port is not placed!
+       Replace will regard r_credit_packet[21] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[22] toplevel port is not placed!
+       Replace will regard r_credit_packet[22] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[23] toplevel port is not placed!
+       Replace will regard r_credit_packet[23] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[24] toplevel port is not placed!
+       Replace will regard r_credit_packet[24] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[25] toplevel port is not placed!
+       Replace will regard r_credit_packet[25] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[26] toplevel port is not placed!
+       Replace will regard r_credit_packet[26] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[27] toplevel port is not placed!
+       Replace will regard r_credit_packet[27] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[28] toplevel port is not placed!
+       Replace will regard r_credit_packet[28] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[29] toplevel port is not placed!
+       Replace will regard r_credit_packet[29] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[2] toplevel port is not placed!
+       Replace will regard r_credit_packet[2] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[30] toplevel port is not placed!
+       Replace will regard r_credit_packet[30] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[31] toplevel port is not placed!
+       Replace will regard r_credit_packet[31] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[32] toplevel port is not placed!
+       Replace will regard r_credit_packet[32] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[33] toplevel port is not placed!
+       Replace will regard r_credit_packet[33] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[34] toplevel port is not placed!
+       Replace will regard r_credit_packet[34] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[35] toplevel port is not placed!
+       Replace will regard r_credit_packet[35] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[36] toplevel port is not placed!
+       Replace will regard r_credit_packet[36] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[3] toplevel port is not placed!
+       Replace will regard r_credit_packet[3] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[4] toplevel port is not placed!
+       Replace will regard r_credit_packet[4] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[5] toplevel port is not placed!
+       Replace will regard r_credit_packet[5] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[6] toplevel port is not placed!
+       Replace will regard r_credit_packet[6] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[7] toplevel port is not placed!
+       Replace will regard r_credit_packet[7] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[8] toplevel port is not placed!
+       Replace will regard r_credit_packet[8] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_packet[9] toplevel port is not placed!
+       Replace will regard r_credit_packet[9] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_vc_credit_gnt[0] toplevel port is not placed!
+       Replace will regard r_credit_vc_credit_gnt[0] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_vc_credit_gnt[1] toplevel port is not placed!
+       Replace will regard r_credit_vc_credit_gnt[1] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_vc_target[0] toplevel port is not placed!
+       Replace will regard r_credit_vc_target[0] is placed in (0, 0)
+[WARNING GPL-0001] r_credit_vc_target[1] toplevel port is not placed!
+       Replace will regard r_credit_vc_target[1] is placed in (0, 0)
+[WARNING GPL-0001] rst toplevel port is not placed!
+       Replace will regard rst is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[0] toplevel port is not placed!
+       Replace will regard u0_credit_packet[0] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[10] toplevel port is not placed!
+       Replace will regard u0_credit_packet[10] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[11] toplevel port is not placed!
+       Replace will regard u0_credit_packet[11] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[12] toplevel port is not placed!
+       Replace will regard u0_credit_packet[12] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[13] toplevel port is not placed!
+       Replace will regard u0_credit_packet[13] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[14] toplevel port is not placed!
+       Replace will regard u0_credit_packet[14] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[15] toplevel port is not placed!
+       Replace will regard u0_credit_packet[15] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[16] toplevel port is not placed!
+       Replace will regard u0_credit_packet[16] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[17] toplevel port is not placed!
+       Replace will regard u0_credit_packet[17] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[18] toplevel port is not placed!
+       Replace will regard u0_credit_packet[18] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[19] toplevel port is not placed!
+       Replace will regard u0_credit_packet[19] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[1] toplevel port is not placed!
+       Replace will regard u0_credit_packet[1] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[20] toplevel port is not placed!
+       Replace will regard u0_credit_packet[20] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[21] toplevel port is not placed!
+       Replace will regard u0_credit_packet[21] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[22] toplevel port is not placed!
+       Replace will regard u0_credit_packet[22] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[23] toplevel port is not placed!
+       Replace will regard u0_credit_packet[23] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[24] toplevel port is not placed!
+       Replace will regard u0_credit_packet[24] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[25] toplevel port is not placed!
+       Replace will regard u0_credit_packet[25] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[26] toplevel port is not placed!
+       Replace will regard u0_credit_packet[26] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[27] toplevel port is not placed!
+       Replace will regard u0_credit_packet[27] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[28] toplevel port is not placed!
+       Replace will regard u0_credit_packet[28] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[29] toplevel port is not placed!
+       Replace will regard u0_credit_packet[29] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[2] toplevel port is not placed!
+       Replace will regard u0_credit_packet[2] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[30] toplevel port is not placed!
+       Replace will regard u0_credit_packet[30] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[31] toplevel port is not placed!
+       Replace will regard u0_credit_packet[31] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[32] toplevel port is not placed!
+       Replace will regard u0_credit_packet[32] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[33] toplevel port is not placed!
+       Replace will regard u0_credit_packet[33] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[34] toplevel port is not placed!
+       Replace will regard u0_credit_packet[34] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[35] toplevel port is not placed!
+       Replace will regard u0_credit_packet[35] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[36] toplevel port is not placed!
+       Replace will regard u0_credit_packet[36] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[3] toplevel port is not placed!
+       Replace will regard u0_credit_packet[3] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[4] toplevel port is not placed!
+       Replace will regard u0_credit_packet[4] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[5] toplevel port is not placed!
+       Replace will regard u0_credit_packet[5] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[6] toplevel port is not placed!
+       Replace will regard u0_credit_packet[6] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[7] toplevel port is not placed!
+       Replace will regard u0_credit_packet[7] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[8] toplevel port is not placed!
+       Replace will regard u0_credit_packet[8] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_packet[9] toplevel port is not placed!
+       Replace will regard u0_credit_packet[9] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_vc_credit_gnt[0] toplevel port is not placed!
+       Replace will regard u0_credit_vc_credit_gnt[0] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_vc_credit_gnt[1] toplevel port is not placed!
+       Replace will regard u0_credit_vc_credit_gnt[1] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_vc_target[0] toplevel port is not placed!
+       Replace will regard u0_credit_vc_target[0] is placed in (0, 0)
+[WARNING GPL-0001] u0_credit_vc_target[1] toplevel port is not placed!
+       Replace will regard u0_credit_vc_target[1] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[0] toplevel port is not placed!
+       Replace will regard u1_credit_packet[0] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[10] toplevel port is not placed!
+       Replace will regard u1_credit_packet[10] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[11] toplevel port is not placed!
+       Replace will regard u1_credit_packet[11] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[12] toplevel port is not placed!
+       Replace will regard u1_credit_packet[12] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[13] toplevel port is not placed!
+       Replace will regard u1_credit_packet[13] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[14] toplevel port is not placed!
+       Replace will regard u1_credit_packet[14] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[15] toplevel port is not placed!
+       Replace will regard u1_credit_packet[15] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[16] toplevel port is not placed!
+       Replace will regard u1_credit_packet[16] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[17] toplevel port is not placed!
+       Replace will regard u1_credit_packet[17] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[18] toplevel port is not placed!
+       Replace will regard u1_credit_packet[18] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[19] toplevel port is not placed!
+       Replace will regard u1_credit_packet[19] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[1] toplevel port is not placed!
+       Replace will regard u1_credit_packet[1] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[20] toplevel port is not placed!
+       Replace will regard u1_credit_packet[20] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[21] toplevel port is not placed!
+       Replace will regard u1_credit_packet[21] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[22] toplevel port is not placed!
+       Replace will regard u1_credit_packet[22] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[23] toplevel port is not placed!
+       Replace will regard u1_credit_packet[23] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[24] toplevel port is not placed!
+       Replace will regard u1_credit_packet[24] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[25] toplevel port is not placed!
+       Replace will regard u1_credit_packet[25] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[26] toplevel port is not placed!
+       Replace will regard u1_credit_packet[26] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[27] toplevel port is not placed!
+       Replace will regard u1_credit_packet[27] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[28] toplevel port is not placed!
+       Replace will regard u1_credit_packet[28] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[29] toplevel port is not placed!
+       Replace will regard u1_credit_packet[29] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[2] toplevel port is not placed!
+       Replace will regard u1_credit_packet[2] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[30] toplevel port is not placed!
+       Replace will regard u1_credit_packet[30] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[31] toplevel port is not placed!
+       Replace will regard u1_credit_packet[31] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[32] toplevel port is not placed!
+       Replace will regard u1_credit_packet[32] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[33] toplevel port is not placed!
+       Replace will regard u1_credit_packet[33] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[34] toplevel port is not placed!
+       Replace will regard u1_credit_packet[34] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[35] toplevel port is not placed!
+       Replace will regard u1_credit_packet[35] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[36] toplevel port is not placed!
+       Replace will regard u1_credit_packet[36] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[3] toplevel port is not placed!
+       Replace will regard u1_credit_packet[3] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[4] toplevel port is not placed!
+       Replace will regard u1_credit_packet[4] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[5] toplevel port is not placed!
+       Replace will regard u1_credit_packet[5] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[6] toplevel port is not placed!
+       Replace will regard u1_credit_packet[6] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[7] toplevel port is not placed!
+       Replace will regard u1_credit_packet[7] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[8] toplevel port is not placed!
+       Replace will regard u1_credit_packet[8] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_packet[9] toplevel port is not placed!
+       Replace will regard u1_credit_packet[9] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_vc_credit_gnt[0] toplevel port is not placed!
+       Replace will regard u1_credit_vc_credit_gnt[0] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_vc_credit_gnt[1] toplevel port is not placed!
+       Replace will regard u1_credit_vc_credit_gnt[1] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_vc_target[0] toplevel port is not placed!
+       Replace will regard u1_credit_vc_target[0] is placed in (0, 0)
+[WARNING GPL-0001] u1_credit_vc_target[1] toplevel port is not placed!
+       Replace will regard u1_credit_vc_target[1] is placed in (0, 0)
+[INFO GPL-0006] Number of instances:             56952
+[INFO GPL-0007] Movable instances:               54792
+[INFO GPL-0008] Fixed instances:                  2160
+[INFO GPL-0009] Dummy instances:                     0
+[INFO GPL-0010] Number of nets:                  54882
+[INFO GPL-0011] Number of pins:                 180027
+[INFO GPL-0012] Die BBox:  (  0.000  0.000 ) ( 133.652 133.652 ) um
+[INFO GPL-0013] Core BBox: (  2.052  2.160 ) ( 131.652 131.490 ) um
+[INFO GPL-0016] Core area:                   16761.168 um^2
+[INFO GPL-0017] Fixed instances area:           62.986 um^2
+[INFO GPL-0018] Movable instances area:       6723.902 um^2
+[INFO GPL-0019] Utilization:                    40.267 %
+[INFO GPL-0020] Standard cells area:          6723.902 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[INFO GPL-0023] Placement target density:       1.0000
+[INFO GPL-0024] Movable insts average area:      0.123 um^2
+[INFO GPL-0025] Ideal bin area:                  0.123 um^2
+[INFO GPL-0026] Ideal bin count:                136585
+[INFO GPL-0027] Total bin area:              16761.168 um^2
+[INFO GPL-0028] Bin count (X, Y):         256 ,    256
+[INFO GPL-0029] Bin size (W * H):       0.506 *  0.505 um
+[INFO GPL-0030] Number of bins:                  65536
+Placement density is 0.5379999971389771, computed from PLACE_DENSITY_LB_ADDON 0.20 and lower bound 0.4099999964237213
+global_placement -skip_io -density 0.5379999971389771 -pad_left 0 -pad_right 0
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.054  0.270 ) um
+[INFO GPL-0004] CoreBBox: (  2.052  2.160 ) ( 131.652 131.490 ) um
+[INFO GPL-0006] Number of instances:             56952
+[INFO GPL-0007] Movable instances:               54792
+[INFO GPL-0008] Fixed instances:                  2160
+[INFO GPL-0009] Dummy instances:                     0
+[INFO GPL-0010] Number of nets:                  54882
+[INFO GPL-0011] Number of pins:                 179861
+[INFO GPL-0012] Die BBox:  (  0.000  0.000 ) ( 133.652 133.652 ) um
+[INFO GPL-0013] Core BBox: (  2.052  2.160 ) ( 131.652 131.490 ) um
+[INFO GPL-0016] Core area:                   16761.168 um^2
+[INFO GPL-0017] Fixed instances area:           62.986 um^2
+[INFO GPL-0018] Movable instances area:       6723.902 um^2
+[INFO GPL-0019] Utilization:                    40.267 %
+[INFO GPL-0020] Standard cells area:          6723.902 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[INFO GPL-0023] Placement target density:       0.5380
+[INFO GPL-0024] Movable insts average area:      0.123 um^2
+[INFO GPL-0025] Ideal bin area:                  0.228 um^2
+[INFO GPL-0026] Ideal bin count:                 73482
+[INFO GPL-0027] Total bin area:              16761.168 um^2
+[INFO GPL-0028] Bin count (X, Y):         256 ,    256
+[INFO GPL-0029] Bin size (W * H):       0.506 *  0.505 um
+[INFO GPL-0030] Number of bins:                  65536
+[INFO GPL-0031] HPWL: Half-Perimeter Wirelength
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+        1 |   0.9971 |  3.595838e+07 |   +0.00% |  3.34e-14 |      
+       10 |   0.9976 |  1.245431e+07 |  -65.36% |  5.18e-14 |      
+       20 |   0.9976 |  1.180073e+07 |   -5.25% |  8.45e-14 |      
+       30 |   0.9975 |  1.174188e+07 |   -0.50% |  1.38e-13 |      
+       40 |   0.9975 |  1.173623e+07 |   -0.05% |  2.24e-13 |      
+       50 |   0.9975 |  1.172409e+07 |   -0.10% |  3.65e-13 |      
+       60 |   0.9975 |  1.171408e+07 |   -0.09% |  5.95e-13 |      
+       70 |   0.9975 |  1.171968e+07 |   +0.05% |  9.68e-13 |      
+       80 |   0.9975 |  1.176279e+07 |   +0.37% |  1.58e-12 |      
+       90 |   0.9975 |  1.193472e+07 |   +1.46% |  2.57e-12 |      
+      100 |   0.9973 |  1.243647e+07 |   +4.20% |  4.19e-12 |      
+      110 |   0.9969 |  1.358819e+07 |   +9.26% |  6.82e-12 |      
+      120 |   0.9960 |  1.562425e+07 |  +14.98% |  1.11e-11 |      
+      130 |   0.9945 |  1.817616e+07 |  +16.33% |  1.81e-11 |      
+      140 |   0.9924 |  2.142030e+07 |  +17.85% |  2.94e-11 |      
+      150 |   0.9895 |  2.544758e+07 |  +18.80% |  4.79e-11 |      
+      160 |   0.9858 |  3.036980e+07 |  +19.34% |  7.80e-11 |      
+      170 |   0.9806 |  3.629816e+07 |  +19.52% |  1.27e-10 |      
+      180 |   0.9735 |  4.343823e+07 |  +19.67% |  2.07e-10 |      
+      190 |   0.9642 |  5.222598e+07 |  +20.23% |  3.36e-10 |      
+      200 |   0.9514 |  6.297670e+07 |  +20.59% |  5.47e-10 |      
+      210 |   0.9346 |  7.578487e+07 |  +20.34% |  8.90e-10 |      
+      220 |   0.9140 |  8.900378e+07 |  +17.44% |  1.45e-09 |      
+      230 |   0.8890 |  1.025211e+08 |  +15.19% |  2.36e-09 |      
+      240 |   0.8598 |  1.155100e+08 |  +12.67% |  3.83e-09 |      
+      250 |   0.8273 |  1.274668e+08 |  +10.35% |  6.23e-09 |      
+      260 |   0.7921 |  1.362651e+08 |   +6.90% |  1.01e-08 |      
+      270 |   0.7545 |  1.439232e+08 |   +5.62% |  1.65e-08 |      
+      280 |   0.7127 |  1.513894e+08 |   +5.19% |  2.69e-08 |      
+      290 |   0.6678 |  1.586539e+08 |   +4.80% |  4.37e-08 |      
+      300 |   0.6191 |  1.664209e+08 |   +4.90% |  7.12e-08 |      
+      310 |   0.5679 |  1.716627e+08 |   +3.15% |  1.16e-07 |      
+      320 |   0.5226 |  1.776074e+08 |   +3.46% |  1.89e-07 |      
+      330 |   0.4792 |  1.808670e+08 |   +1.84% |  3.07e-07 |      
+      340 |   0.4368 |  1.817612e+08 |   +0.49% |  5.00e-07 |      
+      350 |   0.3964 |  1.825882e+08 |   +0.46% |  8.15e-07 |      
+      360 |   0.3528 |  1.832858e+08 |   +0.38% |  1.33e-06 |      
+      370 |   0.3174 |  1.830126e+08 |   -0.15% |  1.99e-06 |      
+      380 |   0.2838 |  1.830339e+08 |   +0.01% |  2.94e-06 |      
+      390 |   0.2532 |  1.829269e+08 |   -0.06% |  4.33e-06 |      
+      400 |   0.2229 |  1.827718e+08 |   -0.08% |  6.38e-06 |      
+      410 |   0.1964 |  1.827038e+08 |   -0.04% |  9.39e-06 |      
+      420 |   0.1724 |  1.826477e+08 |   -0.03% |  1.38e-05 |      
+      430 |   0.1516 |  1.826088e+08 |   -0.02% |  2.04e-05 |      
+      440 |   0.1326 |  1.826081e+08 |   -0.00% |  3.00e-05 |      
+      450 |   0.1162 |  1.826441e+08 |   +0.02% |  4.42e-05 |      
+      460 |   0.1017 |  1.827538e+08 |   +0.06% |  6.52e-05 |      
+[INFO GPL-1001] Finished with Overflow: 0.098692
+[INFO GPL-1002] Placed Cell Area             6723.9023
+[INFO GPL-1003] Available Free Area         16698.1824
+[INFO GPL-1004] Minimum Feasible Density        0.4100 (cell_area / free_area)
+[INFO GPL-1006]   Suggested Target Densities:
+[INFO GPL-1007]     - For 90% usage of free space: 0.4474
+[INFO GPL-1008]     - For 80% usage of free space: 0.5033
+Took 30 seconds: global_placement -skip_io -density 0.5379999971389771 -pad_left 0 -pad_right 0
+Elapsed time: 0:31.11[h:]min:sec. CPU time: user 498.31 sys 5.48 (1619%). Peak memory: 374848KB.

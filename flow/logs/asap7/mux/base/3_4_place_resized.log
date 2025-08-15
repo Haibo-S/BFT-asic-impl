@@ -1,0 +1,33 @@
+OpenROAD v2.0-21872-gd51df1dea5 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 32 thread(s).
+source /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/platforms/asap7/liberty_suppressions.tcl
+suppress_message STA 1212
+Perform port buffering...
+[INFO RSZ-0027] Inserted 4 input buffers.
+[INFO RSZ-0028] Inserted 1 output buffers.
+Perform buffer insertion and gate resizing...
+repair_design -verbose
+[INFO RSZ-0058] Using max wire length 162um.
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |        22
+       10 |     +0.7% |       1 |       0 |             0 |        12
+       20 |     +3.4% |       5 |       0 |             0 |         2
+    final |     +3.4% |       5 |       0 |             0 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0039] Resized 5 instances.
+Repair tie lo fanout...
+Repair tie hi fanout...
+Floating nets: 
+Report metrics stage 3, resizer...
+
+==========================================================================
+resizer report_design_area
+--------------------------------------------------------------------------
+Design area 2 u^2 57% utilization.
+Instance count before 26, after 31
+Pin count before 35, after 45
+Elapsed time: 0:01.90[h:]min:sec. CPU time: user 0.78 sys 0.12 (47%). Peak memory: 201504KB.

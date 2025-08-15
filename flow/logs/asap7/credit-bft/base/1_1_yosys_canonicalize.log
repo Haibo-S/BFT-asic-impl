@@ -1,0 +1,48 @@
+Using ABC speed script.
+Extracting clock period from SDC file: ./results/asap7/credit-bft/base/clock_period.txt
+Setting clock period to 1000
+1. Executing Liberty frontend: ./objects/asap7/credit-bft/base/lib/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib
+2. Executing Liberty frontend: ./objects/asap7/credit-bft/base/lib/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib
+3. Executing Liberty frontend: ./objects/asap7/credit-bft/base/lib/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib
+4. Executing Liberty frontend: ./objects/asap7/credit-bft/base/lib/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib
+5. Executing Liberty frontend: ./objects/asap7/credit-bft/base/lib/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib
+6. Executing Liberty frontend: ./objects/asap7/credit-bft/base/lib/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib
+7. Executing Liberty frontend: ./objects/asap7/credit-bft/base/lib/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib
+8. Executing Liberty frontend: ./objects/asap7/credit-bft/base/lib/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib
+9. Executing Liberty frontend: ./objects/asap7/credit-bft/base/lib/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib
+10. Executing Liberty frontend: ./objects/asap7/credit-bft/base/lib/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib
+11. Executing Verilog-2005 frontend: /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v
+12. Executing Verilog-2005 frontend: /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/mux.v
+13. Executing Verilog-2005 frontend: /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/platforms/asap7/yoSys/cells_clkgate_R.v
+14. Executing HIERARCHY pass (managing design hierarchy).
+15. Executing AST frontend in derive mode using pre-parsed AST for module `\topology_t_binary_tree_wrap'.
+/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:371: Warning: Identifier `\if_root.credit_vc_target' is implicitly declared.
+/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:372: Warning: Identifier `\if_root.credit_packet' is implicitly declared.
+/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:373: Warning: Identifier `\if_root.credit_vc_credit_gnt' is implicitly declared.
+/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:374: Warning: Identifier `\if_leaf[0].credit_vc_target' is implicitly declared.
+/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:375: Warning: Identifier `\if_leaf[0].credit_packet' is implicitly declared.
+/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:376: Warning: Identifier `\if_leaf[0].credit_vc_credit_gnt' is implicitly declared.
+/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:377: Warning: Identifier `\if_leaf[1].credit_vc_target' is implicitly declared.
+/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:378: Warning: Identifier `\if_leaf[1].credit_packet' is implicitly declared.
+/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/credit-bft/merged.v:379: Warning: Identifier `\if_leaf[1].credit_vc_credit_gnt' is implicitly declared.
+15.1. Analyzing design hierarchy..
+15.2. Executing AST frontend in derive mode using pre-parsed AST for module `\t_switch'.
+15.3. Executing AST frontend in derive mode using pre-parsed AST for module `\fifo32'.
+15.4. Analyzing design hierarchy..
+15.5. Executing AST frontend in derive mode using pre-parsed AST for module `\mux'.
+15.6. Executing AST frontend in derive mode using pre-parsed AST for module `\t_route'.
+15.7. Analyzing design hierarchy..
+15.8. Executing AST frontend in derive mode using pre-parsed AST for module `\credit_counters_tx'.
+15.9. Analyzing design hierarchy..
+15.10. Analyzing design hierarchy..
+16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Warning: Ignoring module topology_t_binary_tree_wrap because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$6be54c79259c774d4d83cb2b1a30b8be65c0bb52\credit_counters_tx because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$5ab47fa472e153593d1791aa477c556603066888\t_route because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$d3e76b73c593fd382cc22ef4cf45e461023373e3\fifo32 because it contains processes (run 'proc' command first).
+17. Executing RTLIL backend.
+Warnings: 13 unique messages, 13 total
+End of script. Logfile hash: 3151a79ac3, CPU: user 0.39s system 0.03s, MEM: 73.75 MB peak
+Yosys 0.53 (git sha1 53c22ab7c, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)
+Time spent: 78% 12x read_liberty (0 sec), 15% 1x hierarchy (0 sec), ...
+Elapsed time: 0:00.60[h:]min:sec. CPU time: user 0.43 sys 0.04 (77%). Peak memory: 78592KB.

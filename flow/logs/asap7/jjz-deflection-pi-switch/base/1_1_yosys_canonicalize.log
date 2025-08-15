@@ -1,0 +1,35 @@
+Using ABC speed script.
+Extracting clock period from SDC file: ./results/asap7/jjz-deflection-pi-switch/base/clock_period.txt
+Setting clock period to 1000
+1. Executing Liberty frontend: ./objects/asap7/jjz-deflection-pi-switch/base/lib/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib
+2. Executing Liberty frontend: ./objects/asap7/jjz-deflection-pi-switch/base/lib/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib
+3. Executing Liberty frontend: ./objects/asap7/jjz-deflection-pi-switch/base/lib/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib
+4. Executing Liberty frontend: ./objects/asap7/jjz-deflection-pi-switch/base/lib/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib
+5. Executing Liberty frontend: ./objects/asap7/jjz-deflection-pi-switch/base/lib/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib
+6. Executing Liberty frontend: ./objects/asap7/jjz-deflection-pi-switch/base/lib/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib
+7. Executing Liberty frontend: ./objects/asap7/jjz-deflection-pi-switch/base/lib/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib
+8. Executing Liberty frontend: ./objects/asap7/jjz-deflection-pi-switch/base/lib/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib
+9. Executing Liberty frontend: ./objects/asap7/jjz-deflection-pi-switch/base/lib/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib
+10. Executing Liberty frontend: ./objects/asap7/jjz-deflection-pi-switch/base/lib/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib
+11. Executing Verilog-2005 frontend: /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/jjz-deflection-pi-switch/pi_switch.v
+12. Executing Verilog-2005 frontend: /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/jjz-deflection-pi-switch/pi_route.v
+13. Executing Verilog-2005 frontend: /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/jjz-deflection-pi-switch/pi_route_lean.v
+14. Executing Verilog-2005 frontend: /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/jjz-deflection-pi-switch/mux.v
+15. Executing Verilog-2005 frontend: /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/platforms/asap7/yoSys/cells_clkgate_R.v
+16. Executing HIERARCHY pass (managing design hierarchy).
+17. Executing AST frontend in derive mode using pre-parsed AST for module `\pi_switch'.
+17.1. Analyzing design hierarchy..
+17.2. Executing AST frontend in derive mode using pre-parsed AST for module `\Mux2'.
+17.3. Executing AST frontend in derive mode using pre-parsed AST for module `\Mux3'.
+17.4. Executing AST frontend in derive mode using pre-parsed AST for module `\pi_route_lean'.
+17.5. Analyzing design hierarchy..
+17.6. Analyzing design hierarchy..
+18. Executing OPT_CLEAN pass (remove unused cells and wires).
+Warning: Ignoring module pi_switch because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$8a7f4eeee620bc80480293575718936c0a861a3a\pi_route_lean because it contains processes (run 'proc' command first).
+19. Executing RTLIL backend.
+Warnings: 2 unique messages, 2 total
+End of script. Logfile hash: 763a705f5d, CPU: user 0.26s system 0.02s, MEM: 75.56 MB peak
+Yosys 0.53 (git sha1 53c22ab7c, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)
+Time spent: 94% 12x read_liberty (0 sec), 1% 1x hierarchy (0 sec), ...
+Elapsed time: 0:00.78[h:]min:sec. CPU time: user 0.29 sys 0.02 (41%). Peak memory: 80448KB.

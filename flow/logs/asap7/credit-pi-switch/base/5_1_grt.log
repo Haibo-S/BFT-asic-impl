@@ -1,0 +1,434 @@
+OpenROAD v2.0-21872-gd51df1dea5 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 24 thread(s).
+source /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/platforms/asap7/liberty_suppressions.tcl
+suppress_message STA 1212
+[INFO DRT-0149] Reading tech and libs.
+
+Units:                1000
+Number of layers:     21
+Number of macros:     212
+Number of vias:       14
+Number of viarulegen: 11
+
+[INFO DRT-0150] Reading design.
+
+Design:                   credit_pi_switch
+Die area:                 ( 0 0 ) ( 22409 22409 )
+Number of track patterns: 32
+Number of DEF vias:       0
+Number of components:     1958
+Number of terminals:      478
+Number of snets:          2
+Number of nets:           2167
+
+[INFO DRT-0167] List of default vias:
+  Layer V2
+    default via: VIA23
+  Layer V3
+    default via: VIA34
+  Layer V4
+    default via: VIA45
+  Layer V5
+    default via: VIA56
+  Layer V6
+    default via: VIA67
+  Layer V7
+    default via: VIA78
+  Layer V8
+    default via: VIA89
+  Layer V9
+    default via: VIA9Pad
+[INFO DRT-0162] Library cell analysis.
+[INFO DRT-0163] Instance analysis.
+[INFO DRT-0164] Number of unique instances = 163.
+[INFO DRT-0168] Init region query.
+[INFO DRT-0024]   Complete Active.
+[INFO DRT-0024]   Complete V0.
+[INFO DRT-0024]   Complete M1.
+[INFO DRT-0024]   Complete V1.
+[INFO DRT-0024]   Complete M2.
+[INFO DRT-0024]   Complete V2.
+[INFO DRT-0024]   Complete M3.
+[INFO DRT-0024]   Complete V3.
+[INFO DRT-0024]   Complete M4.
+[INFO DRT-0024]   Complete V4.
+[INFO DRT-0024]   Complete M5.
+[INFO DRT-0024]   Complete V5.
+[INFO DRT-0024]   Complete M6.
+[INFO DRT-0024]   Complete V6.
+[INFO DRT-0024]   Complete M7.
+[INFO DRT-0024]   Complete V7.
+[INFO DRT-0024]   Complete M8.
+[INFO DRT-0024]   Complete V8.
+[INFO DRT-0024]   Complete M9.
+[INFO DRT-0024]   Complete V9.
+[INFO DRT-0024]   Complete Pad.
+[INFO DRT-0033] Active shape region query size = 0.
+[INFO DRT-0033] V0 shape region query size = 0.
+[INFO DRT-0033] M1 shape region query size = 27424.
+[INFO DRT-0033] V1 shape region query size = 35064.
+[INFO DRT-0033] M2 shape region query size = 590.
+[INFO DRT-0033] V2 shape region query size = 816.
+[INFO DRT-0033] M3 shape region query size = 816.
+[INFO DRT-0033] V3 shape region query size = 544.
+[INFO DRT-0033] M4 shape region query size = 784.
+[INFO DRT-0033] V4 shape region query size = 544.
+[INFO DRT-0033] M5 shape region query size = 550.
+[INFO DRT-0033] V5 shape region query size = 64.
+[INFO DRT-0033] M6 shape region query size = 40.
+[INFO DRT-0033] V6 shape region query size = 0.
+[INFO DRT-0033] M7 shape region query size = 0.
+[INFO DRT-0033] V7 shape region query size = 0.
+[INFO DRT-0033] M8 shape region query size = 0.
+[INFO DRT-0033] V8 shape region query size = 0.
+[INFO DRT-0033] M9 shape region query size = 0.
+[INFO DRT-0033] V9 shape region query size = 0.
+[INFO DRT-0033] Pad shape region query size = 0.
+[INFO DRT-0165] Start pin access.
+[INFO DRT-0078]   Complete 942 pins.
+[INFO DRT-0079]   Complete 100 unique inst patterns.
+[INFO DRT-0081]   Complete 163 unique inst patterns.
+[INFO DRT-0084]   Complete 923 groups.
+#scanned instances     = 1958
+#unique  instances     = 163
+#stdCellGenAp          = 4581
+#stdCellValidPlanarAp  = 79
+#stdCellValidViaAp     = 3703
+#stdCellPinNoAp        = 0
+#stdCellPinCnt         = 5844
+#instTermValidViaApCnt = 0
+#macroGenAp            = 0
+#macroValidPlanarAp    = 0
+#macroValidViaAp       = 0
+#macroNoAp             = 0
+[INFO DRT-0166] Complete pin access.
+[INFO DRT-0267] cpu time = 00:00:20, elapsed time = 00:00:01, memory = 205.44 (MB), peak = 205.44 (MB)
+global_route -congestion_report_file ./reports/asap7/credit-pi-switch/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose
+[INFO GRT-0020] Min routing layer: M2
+[INFO GRT-0021] Max routing layer: M7
+[INFO GRT-0022] Global adjustment: 0%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer M1      Track-Pitch = 0.0360  line-2-Via Pitch: 0.0360
+[INFO GRT-0088] Layer M2      Track-Pitch = 0.0390  line-2-Via Pitch: 0.0360
+[INFO GRT-0088] Layer M3      Track-Pitch = 0.0360  line-2-Via Pitch: 0.0360
+[INFO GRT-0088] Layer M4      Track-Pitch = 0.0480  line-2-Via Pitch: 0.0480
+[INFO GRT-0088] Layer M5      Track-Pitch = 0.0480  line-2-Via Pitch: 0.0480
+[INFO GRT-0088] Layer M6      Track-Pitch = 0.0640  line-2-Via Pitch: 0.0640
+[INFO GRT-0088] Layer M7      Track-Pitch = 0.0640  line-2-Via Pitch: 0.0640
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0004] Blockages: 132
+[INFO GRT-0019] Found 6 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 15
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+M1         Vertical            0             0          0.00%
+M2         Horizontal      22140         12589          43.14%
+M3         Vertical        25502         17564          31.13%
+M4         Horizontal      18696         13004          30.45%
+M5         Vertical        18696         12604          32.58%
+M6         Horizontal      13612          8968          34.12%
+M7         Vertical        13612          9960          26.83%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 11188
+[INFO GRT-0198] Via related Steiner nodes: 302
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 15030
+[INFO GRT-0112] Final usage 3D: 57731
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+M1                   0             0            0.00%             0 /  0 /  0
+M2               12589          4318           34.30%             0 /  0 /  0
+M3               17564          5547           31.58%             0 /  0 /  0
+M4               13004          1558           11.98%             0 /  0 /  0
+M5               12604          1082            8.58%             0 /  0 /  0
+M6                8968            50            0.56%             0 /  0 /  0
+M7                9960            86            0.86%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            74689         12641           16.92%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 9772 um
+[INFO GRT-0014] Routed nets: 2167
+Perform buffer insertion and gate resizing...
+repair_design -verbose
+[INFO RSZ-0058] Using max wire length 162um.
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |      2170
+       10 |     +0.0% |       0 |       0 |             0 |      2160
+       20 |     +0.0% |       0 |       0 |             0 |      2150
+       30 |     +0.0% |       0 |       0 |             0 |      2140
+       40 |     +0.0% |       0 |       0 |             0 |      2130
+       50 |     +0.0% |       0 |       0 |             0 |      2120
+       60 |     +0.0% |       0 |       0 |             0 |      2110
+       70 |     +0.0% |       0 |       0 |             0 |      2100
+       80 |     +0.0% |       0 |       0 |             0 |      2090
+       90 |     +0.0% |       0 |       0 |             0 |      2080
+      100 |     +0.0% |       0 |       0 |             0 |      2070
+      110 |     +0.0% |       0 |       0 |             0 |      2060
+      120 |     +0.0% |       0 |       0 |             0 |      2050
+      130 |     +0.0% |       0 |       0 |             0 |      2040
+      140 |     +0.0% |       0 |       0 |             0 |      2030
+      150 |     +0.0% |       0 |       0 |             0 |      2020
+      160 |     +0.0% |       0 |       0 |             0 |      2010
+      170 |     +0.0% |       0 |       0 |             0 |      2000
+      180 |     +0.0% |       0 |       0 |             0 |      1990
+      190 |     +0.0% |       0 |       0 |             0 |      1980
+      200 |     +0.0% |       0 |       0 |             0 |      1970
+      210 |     +0.0% |       0 |       0 |             0 |      1960
+      220 |     +0.0% |       0 |       0 |             0 |      1950
+      230 |     +0.0% |       0 |       0 |             0 |      1940
+      240 |     +0.0% |       0 |       0 |             0 |      1930
+      250 |     +0.0% |       0 |       0 |             0 |      1920
+      260 |     +0.0% |       0 |       0 |             0 |      1910
+      270 |     +0.0% |       0 |       0 |             0 |      1900
+      280 |     +0.0% |       0 |       0 |             0 |      1890
+      290 |     +0.0% |       0 |       0 |             0 |      1880
+      300 |     +0.0% |       0 |       0 |             0 |      1870
+      310 |     +0.0% |       0 |       0 |             0 |      1860
+      320 |     +0.0% |       0 |       0 |             0 |      1850
+      330 |     +0.0% |       0 |       0 |             0 |      1840
+      340 |     +0.0% |       0 |       0 |             0 |      1830
+      350 |     +0.0% |       0 |       0 |             0 |      1820
+      360 |     +0.0% |       0 |       0 |             0 |      1810
+      370 |     +0.0% |       0 |       0 |             0 |      1800
+      380 |     +0.0% |       0 |       0 |             0 |      1790
+      390 |     +0.0% |       0 |       0 |             0 |      1780
+      400 |     +0.0% |       0 |       0 |             0 |      1770
+      410 |     +0.0% |       0 |       0 |             0 |      1760
+      420 |     +0.0% |       0 |       0 |             0 |      1750
+      430 |     +0.0% |       0 |       0 |             0 |      1740
+      440 |     +0.0% |       0 |       0 |             0 |      1730
+      450 |     +0.0% |       0 |       0 |             0 |      1720
+      460 |     +0.0% |       0 |       0 |             0 |      1710
+      470 |     +0.0% |       0 |       0 |             0 |      1700
+      480 |     +0.0% |       0 |       0 |             0 |      1690
+      490 |     +0.0% |       0 |       0 |             0 |      1680
+      500 |     +0.0% |       0 |       0 |             0 |      1670
+      510 |     +0.0% |       0 |       0 |             0 |      1660
+      520 |     +0.0% |       0 |       0 |             0 |      1650
+      530 |     +0.0% |       0 |       0 |             0 |      1640
+      540 |     +0.0% |       0 |       0 |             0 |      1630
+      550 |     +0.0% |       0 |       0 |             0 |      1620
+      560 |     +0.0% |       0 |       0 |             0 |      1610
+      570 |     +0.0% |       0 |       0 |             0 |      1600
+      580 |     +0.0% |       0 |       0 |             0 |      1590
+      590 |     +0.0% |       0 |       0 |             0 |      1580
+      600 |     +0.0% |       0 |       0 |             0 |      1570
+      610 |     +0.0% |       0 |       0 |             0 |      1560
+      620 |     +0.0% |       0 |       0 |             0 |      1550
+      630 |     +0.0% |       0 |       0 |             0 |      1540
+      640 |     +0.0% |       0 |       0 |             0 |      1530
+      650 |     +0.0% |       0 |       0 |             0 |      1520
+      660 |     +0.0% |       0 |       0 |             0 |      1510
+      670 |     +0.0% |       0 |       0 |             0 |      1500
+      680 |     +0.0% |       0 |       0 |             0 |      1490
+      690 |     +0.0% |       0 |       0 |             0 |      1480
+      700 |     +0.0% |       0 |       0 |             0 |      1470
+      710 |     +0.0% |       0 |       0 |             0 |      1460
+      720 |     +0.0% |       0 |       0 |             0 |      1450
+      730 |     +0.0% |       0 |       0 |             0 |      1440
+      740 |     +0.0% |       0 |       0 |             0 |      1430
+      750 |     +0.0% |       0 |       0 |             0 |      1420
+      760 |     +0.0% |       0 |       0 |             0 |      1410
+      770 |     +0.0% |       0 |       0 |             0 |      1400
+      780 |     +0.0% |       0 |       0 |             0 |      1390
+      790 |     +0.0% |       0 |       0 |             0 |      1380
+      800 |     +0.0% |       0 |       0 |             0 |      1370
+      810 |     +0.0% |       0 |       0 |             0 |      1360
+      820 |     +0.0% |       0 |       0 |             0 |      1350
+      830 |     +0.0% |       0 |       0 |             0 |      1340
+      840 |     +0.0% |       0 |       0 |             0 |      1330
+      850 |     +0.0% |       0 |       0 |             0 |      1320
+      860 |     +0.0% |       0 |       0 |             0 |      1310
+      870 |     +0.0% |       0 |       0 |             0 |      1300
+      880 |     +0.0% |       0 |       0 |             0 |      1290
+      890 |     +0.0% |       0 |       0 |             0 |      1280
+      900 |     +0.0% |       0 |       0 |             0 |      1270
+      910 |     +0.0% |       0 |       0 |             0 |      1260
+      920 |     +0.0% |       0 |       0 |             0 |      1250
+      930 |     +0.0% |       0 |       0 |             0 |      1240
+      940 |     +0.0% |       0 |       0 |             0 |      1230
+      950 |     +0.0% |       0 |       0 |             0 |      1220
+      960 |     +0.0% |       0 |       0 |             0 |      1210
+      970 |     +0.0% |       0 |       0 |             0 |      1200
+      980 |     +0.0% |       0 |       0 |             0 |      1190
+      990 |     +0.0% |       0 |       0 |             0 |      1180
+     1000 |     +0.0% |       0 |       0 |             0 |      1170
+     1010 |     +0.0% |       0 |       0 |             0 |      1160
+     1020 |     +0.0% |       0 |       0 |             0 |      1150
+     1030 |     +0.0% |       0 |       0 |             0 |      1140
+     1040 |     +0.0% |       0 |       0 |             0 |      1130
+     1050 |     +0.0% |       0 |       0 |             0 |      1120
+     1060 |     +0.0% |       0 |       0 |             0 |      1110
+     1070 |     +0.0% |       0 |       0 |             0 |      1100
+     1080 |     +0.0% |       0 |       0 |             0 |      1090
+     1090 |     +0.0% |       0 |       0 |             0 |      1080
+     1100 |     +0.0% |       0 |       0 |             0 |      1070
+     1110 |     +0.0% |       0 |       0 |             0 |      1060
+     1120 |     +0.0% |       0 |       0 |             0 |      1050
+     1130 |     +0.0% |       0 |       0 |             0 |      1040
+     1140 |     +0.0% |       0 |       0 |             0 |      1030
+     1150 |     +0.0% |       0 |       0 |             0 |      1020
+     1160 |     +0.0% |       0 |       0 |             0 |      1010
+     1170 |     +0.0% |       0 |       0 |             0 |      1000
+     1180 |     +0.0% |       0 |       0 |             0 |       990
+     1190 |     +0.0% |       0 |       0 |             0 |       980
+     1200 |     +0.0% |       0 |       0 |             0 |       970
+     1210 |     +0.0% |       0 |       0 |             0 |       960
+     1220 |     +0.0% |       0 |       0 |             0 |       950
+     1230 |     +0.0% |       0 |       0 |             0 |       940
+     1240 |     +0.0% |       0 |       0 |             0 |       930
+     1250 |     +0.0% |       0 |       0 |             0 |       920
+     1260 |     +0.0% |       0 |       0 |             0 |       910
+     1270 |     +0.0% |       0 |       0 |             0 |       900
+     1280 |     +0.0% |       0 |       0 |             0 |       890
+     1290 |     +0.0% |       0 |       0 |             0 |       880
+     1300 |     +0.0% |       0 |       0 |             0 |       870
+     1310 |     +0.0% |       0 |       0 |             0 |       860
+     1320 |     +0.0% |       0 |       0 |             0 |       850
+     1330 |     +0.0% |       0 |       0 |             0 |       840
+     1340 |     +0.0% |       0 |       0 |             0 |       830
+     1350 |     +0.0% |       0 |       0 |             0 |       820
+     1360 |     +0.0% |       0 |       0 |             0 |       810
+     1370 |     +0.0% |       0 |       0 |             0 |       800
+     1380 |     +0.0% |       0 |       0 |             0 |       790
+     1390 |     +0.0% |       0 |       0 |             0 |       780
+     1400 |     +0.0% |       0 |       0 |             0 |       770
+     1410 |     +0.0% |       0 |       0 |             0 |       760
+     1420 |     +0.0% |       0 |       0 |             0 |       750
+     1430 |     +0.0% |       0 |       0 |             0 |       740
+     1440 |     +0.0% |       0 |       0 |             0 |       730
+     1450 |     +0.0% |       0 |       0 |             0 |       720
+     1460 |     +0.0% |       0 |       0 |             0 |       710
+     1470 |     +0.0% |       0 |       0 |             0 |       700
+     1480 |     +0.0% |       0 |       0 |             0 |       690
+     1490 |     +0.0% |       0 |       0 |             0 |       680
+     1500 |     +0.0% |       0 |       0 |             0 |       670
+     1510 |     +0.0% |       0 |       0 |             0 |       660
+     1520 |     +0.0% |       0 |       0 |             0 |       650
+     1530 |     +0.0% |       0 |       0 |             0 |       640
+     1540 |     +0.0% |       0 |       0 |             0 |       630
+     1550 |     +0.0% |       0 |       0 |             0 |       620
+     1560 |     +0.0% |       0 |       0 |             0 |       610
+     1570 |     +0.0% |       0 |       0 |             0 |       600
+     1580 |     +0.0% |       0 |       0 |             0 |       590
+     1590 |     +0.0% |       0 |       0 |             0 |       580
+     1600 |     +0.0% |       0 |       0 |             0 |       570
+     1610 |     +0.0% |       0 |       0 |             0 |       560
+     1620 |     +0.0% |       0 |       0 |             0 |       550
+     1630 |     +0.0% |       0 |       0 |             0 |       540
+     1640 |     +0.0% |       0 |       0 |             0 |       530
+     1650 |     +0.0% |       0 |       0 |             0 |       520
+     1660 |     +0.0% |       0 |       0 |             0 |       510
+     1670 |     +0.0% |       0 |       0 |             0 |       500
+     1680 |     +0.0% |       0 |       0 |             0 |       490
+     1690 |     +0.0% |       0 |       0 |             0 |       480
+     1700 |     +0.0% |       0 |       0 |             0 |       470
+     1710 |     +0.0% |       0 |       0 |             0 |       460
+     1720 |     +0.0% |       0 |       0 |             0 |       450
+     1730 |     +0.0% |       0 |       0 |             0 |       440
+     1740 |     +0.0% |       0 |       0 |             0 |       430
+     1750 |     +0.0% |       0 |       0 |             0 |       420
+     1760 |     +0.0% |       0 |       0 |             0 |       410
+     1770 |     +0.0% |       0 |       0 |             0 |       400
+     1780 |     +0.0% |       0 |       0 |             0 |       390
+     1790 |     +0.0% |       0 |       0 |             0 |       380
+     1800 |     +0.0% |       0 |       0 |             0 |       370
+     1810 |     +0.0% |       0 |       0 |             0 |       360
+     1820 |     +0.0% |       0 |       0 |             0 |       350
+     1830 |     +0.0% |       0 |       0 |             0 |       340
+     1840 |     +0.0% |       0 |       0 |             0 |       330
+     1850 |     +0.0% |       0 |       0 |             0 |       320
+     1860 |     +0.0% |       0 |       0 |             0 |       310
+     1870 |     +0.0% |       0 |       0 |             0 |       300
+     1880 |     +0.0% |       0 |       0 |             0 |       290
+     1890 |     +0.0% |       0 |       0 |             0 |       280
+     1900 |     +0.0% |       0 |       0 |             0 |       270
+     1910 |     +0.0% |       0 |       0 |             0 |       260
+     1920 |     +0.0% |       0 |       0 |             0 |       250
+     1930 |     +0.0% |       0 |       0 |             0 |       240
+     1940 |     +0.0% |       0 |       0 |             0 |       230
+     1950 |     +0.0% |       0 |       0 |             0 |       220
+     1960 |     +0.0% |       0 |       0 |             0 |       210
+     1970 |     +0.0% |       0 |       0 |             0 |       200
+     1980 |     +0.0% |       0 |       0 |             0 |       190
+     1990 |     +0.0% |       0 |       0 |             0 |       180
+     2000 |     +0.0% |       0 |       0 |             0 |       170
+     2010 |     +0.0% |       0 |       0 |             0 |       160
+     2020 |     +0.0% |       0 |       0 |             0 |       150
+     2030 |     +0.0% |       0 |       0 |             0 |       140
+     2040 |     +0.0% |       0 |       0 |             0 |       130
+     2050 |     +0.0% |       0 |       0 |             0 |       120
+     2060 |     +0.0% |       0 |       0 |             0 |       110
+     2070 |     +0.0% |       0 |       0 |             0 |       100
+     2080 |     +0.0% |       0 |       0 |             0 |        90
+     2090 |     +0.0% |       0 |       0 |             0 |        80
+     2100 |     +0.0% |       0 |       0 |             0 |        70
+     2110 |     +0.0% |       0 |       0 |             0 |        60
+     2120 |     +0.0% |       0 |       0 |             0 |        50
+     2130 |     +0.0% |       0 |       0 |             0 |        40
+     2140 |     +0.0% |       0 |       0 |             0 |        30
+     2150 |     +0.0% |       0 |       0 |             0 |        20
+     2160 |     +0.0% |       0 |       0 |             0 |        10
+     2170 |     +0.0% |       0 |       0 |             0 |         0
+    final |     +0.0% |       0 |       0 |             0 |         0
+---------------------------------------------------------------------
+global_route -start_incremental
+detailed_placement
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL            6415.7 u
+legalized HPWL           6415.7 u
+delta HPWL                    0 %
+
+global_route -end_incremental -congestion_report_file ./reports/asap7/credit-pi-switch/base/congestion_post_repair_design.rpt
+Repair setup and hold violations...
+repair_timing -verbose -setup_margin 0 -hold_margin 0 -repair_tns 100
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeMove SwapPinsMove BufferMove CloneMove SplitLoadMove 
+[INFO RSZ-0098] No setup violations found
+[INFO RSZ-0033] No hold violations found.
+global_route -start_incremental
+detailed_placement
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL            6415.7 u
+legalized HPWL           6415.7 u
+delta HPWL                    0 %
+
+global_route -end_incremental -congestion_report_file ./reports/asap7/credit-pi-switch/base/congestion_post_repair_timing.rpt
+global_route -start_incremental
+global_route -end_incremental -congestion_report_file ./reports/asap7/credit-pi-switch/base/congestion_post_recover_power.rpt
+Repair antennas...
+[WARNING GRT-0246] No diode with LEF class CORE ANTENNACELL found.
+[INFO ANT-0002] Found 0 net violations.
+[INFO ANT-0001] Found 0 pin violations.
+Estimate parasitics...
+Report metrics stage 5, global route...
+
+==========================================================================
+global route report_design_area
+--------------------------------------------------------------------------
+Design area 192 u^2 58% utilization.
+[INFO FLW-0007] clock core_clock period 1000.000000
+[INFO FLW-0008] Clock core_clock period 636.461
+[INFO FLW-0009] Clock core_clock slack 330.042
+[INFO FLW-0011] Path endpoint path count 211
+Elapsed time: 0:06.21[h:]min:sec. CPU time: user 23.88 sys 0.64 (394%). Peak memory: 310204KB.

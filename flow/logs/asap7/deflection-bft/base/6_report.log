@@ -1,0 +1,62 @@
+OpenROAD v2.0-21872-gd51df1dea5 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 24 thread(s).
+source /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/platforms/asap7/liberty_suppressions.tcl
+suppress_message STA 1212
+Deleted 0 routing obstructions
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0435] Reading extraction model file /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/platforms/asap7/rcx_patterns.rules ...
+[INFO RCX-0436] RC segment generation bft (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 92279 rc segments
+[INFO RCX-0439] Coupling Cap extraction bft ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 56% of 93959 wires extracted
+[INFO RCX-0442] 100% of 93959 wires extracted
+[INFO RCX-0045] Extract 14651 nets, 106903 rsegs, 106903 caps, 117219 ccs
+[INFO RCX-0443] 14651 nets finished
+[INFO PSM-0040] All shapes on net VDD are connected.
+[INFO PSM-0073] Using bump pattern with x-pitch 140.0000um, y-pitch 140.0000um, and size 70.0000um with an reduction factor of 3x.
+########## IR report #################
+Net              : VDD
+Corner           : default
+Supply voltage   : 7.70e-01 V
+Worstcase voltage: 7.50e-01 V
+Average voltage  : 7.62e-01 V
+Average IR drop  : 8.13e-03 V
+Worstcase IR drop: 1.97e-02 V
+Percentage drop  : 2.56 %
+######################################
+[INFO PSM-0040] All shapes on net VSS are connected.
+[INFO PSM-0073] Using bump pattern with x-pitch 140.0000um, y-pitch 140.0000um, and size 70.0000um with an reduction factor of 3x.
+########## IR report #################
+Net              : VSS
+Corner           : default
+Supply voltage   : 0.00e+00 V
+Worstcase voltage: 1.94e-02 V
+Average voltage  : 7.89e-03 V
+Average IR drop  : 7.89e-03 V
+Worstcase IR drop: 1.94e-02 V
+Percentage drop  : 2.52 %
+######################################
+Cell type report:                       Count       Area
+  Fill cell                             19917    2345.81
+  Tap cell                                734      21.40
+  Tie cell                                977      42.73
+  Buffer                                 1630     171.39
+  Clock buffer                             61      26.56
+  Timing Repair Buffer                    325      28.96
+  Inverter                               1105      52.18
+  Clock inverter                           45       3.35
+  Sequential cell                        2611     809.07
+  Multi-Input combinational cell         7863     860.06
+  Total                                 35268    4361.52
+Report metrics stage 6, finish...
+
+==========================================================================
+finish report_design_area
+--------------------------------------------------------------------------
+Design area 1994 u^2 46% utilization.
+Elapsed time: 0:43.34[h:]min:sec. CPU time: user 17.83 sys 4.97 (52%). Peak memory: 684012KB.

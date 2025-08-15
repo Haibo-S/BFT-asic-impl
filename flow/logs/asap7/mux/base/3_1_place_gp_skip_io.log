@@ -1,0 +1,109 @@
+OpenROAD v2.0-21872-gd51df1dea5 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 32 thread(s).
+source /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/platforms/asap7/liberty_suppressions.tcl
+suppress_message STA 1212
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.054  0.270 ) um
+[INFO GPL-0004] CoreBBox: (  2.052  2.160 ) (  4.104  4.050 ) um
+[WARNING GPL-0001] a toplevel port is not placed!
+       Replace will regard a is placed in (0, 0)
+[WARNING GPL-0001] b toplevel port is not placed!
+       Replace will regard b is placed in (0, 0)
+[WARNING GPL-0001] clk toplevel port is not placed!
+       Replace will regard clk is placed in (0, 0)
+[WARNING GPL-0001] rst toplevel port is not placed!
+       Replace will regard rst is placed in (0, 0)
+[WARNING GPL-0001] sel toplevel port is not placed!
+       Replace will regard sel is placed in (0, 0)
+[WARNING GPL-0001] y toplevel port is not placed!
+       Replace will regard y is placed in (0, 0)
+[INFO GPL-0006] Number of instances:                26
+[INFO GPL-0007] Movable instances:                  12
+[INFO GPL-0008] Fixed instances:                    14
+[INFO GPL-0009] Dummy instances:                     0
+[INFO GPL-0010] Number of nets:                     17
+[INFO GPL-0011] Number of pins:                     41
+[INFO GPL-0012] Die BBox:  (  0.000  0.000 ) (  6.108  6.108 ) um
+[INFO GPL-0013] Core BBox: (  2.052  2.160 ) (  4.104  4.050 ) um
+[INFO GPL-0016] Core area:                       3.878 um^2
+[INFO GPL-0017] Fixed instances area:            0.408 um^2
+[INFO GPL-0018] Movable instances area:          1.779 um^2
+[INFO GPL-0019] Utilization:                    51.261 %
+[INFO GPL-0020] Standard cells area:             1.779 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[INFO GPL-0023] Placement target density:       1.0000
+[INFO GPL-0024] Movable insts average area:      0.148 um^2
+[INFO GPL-0025] Ideal bin area:                  0.148 um^2
+[INFO GPL-0026] Ideal bin count:                    26
+[INFO GPL-0027] Total bin area:                  3.878 um^2
+[INFO GPL-0028] Bin count (X, Y):           4 ,      4
+[INFO GPL-0029] Bin size (W * H):       0.513 *  0.472 um
+[INFO GPL-0030] Number of bins:                     16
+Placement density is 0.625999984741211, computed from PLACE_DENSITY_LB_ADDON 0.20 and lower bound 0.5199999809265137
+global_placement -skip_io -density 0.625999984741211 -pad_left 0 -pad_right 0
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.054  0.270 ) um
+[INFO GPL-0004] CoreBBox: (  2.052  2.160 ) (  4.104  4.050 ) um
+[INFO GPL-0006] Number of instances:                26
+[INFO GPL-0007] Movable instances:                  12
+[INFO GPL-0008] Fixed instances:                    14
+[INFO GPL-0009] Dummy instances:                     0
+[INFO GPL-0010] Number of nets:                     17
+[INFO GPL-0011] Number of pins:                     35
+[INFO GPL-0012] Die BBox:  (  0.000  0.000 ) (  6.108  6.108 ) um
+[INFO GPL-0013] Core BBox: (  2.052  2.160 ) (  4.104  4.050 ) um
+[INFO GPL-0016] Core area:                       3.878 um^2
+[INFO GPL-0017] Fixed instances area:            0.408 um^2
+[INFO GPL-0018] Movable instances area:          1.779 um^2
+[INFO GPL-0019] Utilization:                    51.261 %
+[INFO GPL-0020] Standard cells area:             1.779 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[INFO GPL-0023] Placement target density:       0.6260
+[INFO GPL-0024] Movable insts average area:      0.148 um^2
+[INFO GPL-0025] Ideal bin area:                  0.237 um^2
+[INFO GPL-0026] Ideal bin count:                    16
+[INFO GPL-0027] Total bin area:                  3.878 um^2
+[INFO GPL-0028] Bin count (X, Y):           4 ,      4
+[INFO GPL-0029] Bin size (W * H):       0.513 *  0.472 um
+[INFO GPL-0030] Number of bins:                     16
+[INFO GPL-0031] HPWL: Half-Perimeter Wirelength
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+        1 |   0.4320 |  7.741000e+03 |   +0.00% |  4.00e-09 |      
+       10 |   0.5247 |  2.981000e+03 |  -61.49% |  5.67e-09 |      
+       20 |   0.4881 |  2.769000e+03 |   -7.11% |  8.35e-09 |      
+       30 |   0.4835 |  2.667000e+03 |   -3.68% |  1.23e-08 |      
+       40 |   0.4881 |  2.662000e+03 |   -0.19% |  1.81e-08 |      
+       50 |   0.4839 |  2.677000e+03 |   +0.56% |  2.67e-08 |      
+       60 |   0.4871 |  2.712000e+03 |   +1.31% |  3.93e-08 |      
+       70 |   0.4917 |  2.708000e+03 |   -0.15% |  5.79e-08 |      
+       80 |   0.4872 |  2.707000e+03 |   -0.04% |  8.54e-08 |      
+       90 |   0.4810 |  2.706000e+03 |   -0.04% |  1.26e-07 |      
+      100 |   0.4873 |  2.725000e+03 |   +0.70% |  1.85e-07 |      
+      110 |   0.4905 |  2.711000e+03 |   -0.51% |  2.73e-07 |      
+      120 |   0.4851 |  2.713000e+03 |   +0.07% |  4.02e-07 |      
+      130 |   0.4832 |  2.760000e+03 |   +1.73% |  5.92e-07 |      
+      140 |   0.4808 |  2.950000e+03 |   +6.88% |  8.72e-07 |      
+      150 |   0.4763 |  2.723000e+03 |   -7.69% |  1.29e-06 |      
+      160 |   0.4653 |  2.730000e+03 |   +0.26% |  1.89e-06 |      
+      170 |   0.4488 |  2.878000e+03 |   +5.42% |  2.79e-06 |      
+      180 |   0.3994 |  3.909000e+03 |  +35.82% |  4.11e-06 |      
+      190 |   0.3454 |  4.605000e+03 |  +17.81% |  6.05e-06 |      
+      200 |   0.2989 |  5.164000e+03 |  +12.14% |  8.92e-06 |      
+      210 |   0.2552 |  5.488000e+03 |   +6.27% |  1.31e-05 |      
+      220 |   0.2112 |  5.798000e+03 |   +5.65% |  1.93e-05 |      
+      230 |   0.1679 |  6.048000e+03 |   +4.31% |  2.85e-05 |      
+      240 |   0.1170 |  6.242000e+03 |   +3.21% |  4.20e-05 |      
+[INFO GPL-1001] Finished with Overflow: 0.095897
+[INFO GPL-1002] Placed Cell Area                1.7788
+[INFO GPL-1003] Available Free Area             3.4700
+[INFO GPL-1004] Minimum Feasible Density        0.5200 (cell_area / free_area)
+[INFO GPL-1006]   Suggested Target Densities:
+[INFO GPL-1007]     - For 90% usage of free space: 0.5696
+[INFO GPL-1008]     - For 80% usage of free space: 0.6408
+[INFO GPL-1009]     - For 50% usage of free space: 1.0252
+Took 21 seconds: global_placement -skip_io -density 0.625999984741211 -pad_left 0 -pad_right 0
+Elapsed time: 0:21.74[h:]min:sec. CPU time: user 374.64 sys 11.08 (1773%). Peak memory: 184852KB.

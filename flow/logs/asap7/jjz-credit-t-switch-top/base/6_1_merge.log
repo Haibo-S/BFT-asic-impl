@@ -1,0 +1,6 @@
+[INFO] Reporting cells prior to loading DEF ...
+	/home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/platforms/asap7/gds/asap7sc7p5t_28_R_220121a.gds
+[INFO] GDS_ALLOW_EMPTY=fakeram.*
+[INFO] All LEF cells have matching GDS/OAS cells
+[INFO] No orphan cells in the final layout
+Elapsed time: 0:02.86[h:]min:sec. CPU time: user 2.32 sys 0.16 (86%). Peak memory: 703564KB.

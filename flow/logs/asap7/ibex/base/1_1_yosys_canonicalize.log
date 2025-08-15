@@ -1,0 +1,37 @@
+Using ABC speed script.
+Extracting clock period from SDC file: ./results/asap7/ibex/base/clock_period.txt
+Setting clock period to 1260
+1. Executing Liberty frontend: ./objects/asap7/ibex/base/lib/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib
+2. Executing Liberty frontend: ./objects/asap7/ibex/base/lib/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib
+3. Executing Liberty frontend: ./objects/asap7/ibex/base/lib/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib
+4. Executing Liberty frontend: ./objects/asap7/ibex/base/lib/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib
+5. Executing Liberty frontend: ./objects/asap7/ibex/base/lib/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib
+6. Executing Liberty frontend: ./objects/asap7/ibex/base/lib/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib
+7. Executing Liberty frontend: ./objects/asap7/ibex/base/lib/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib
+8. Executing Liberty frontend: ./objects/asap7/ibex/base/lib/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib
+9. Executing Liberty frontend: ./objects/asap7/ibex/base/lib/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib
+10. Executing Liberty frontend: ./objects/asap7/ibex/base/lib/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib
+11. Executing SLANG frontend.
+11.1. Executing UNDRIVEN pass. (resolve undriven signals)
+11.2. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+11.3. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+11.4. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+11.5. Executing PROC_INIT pass (extract init attributes).
+11.6. Executing PROC_ROM pass (convert switches to ROMs).
+11.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+11.8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+11.9. Executing OPT_EXPR pass (perform const folding).
+12. Executing Verilog-2005 frontend: /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/platforms/asap7/yoSys/cells_clkgate_R.v
+13. Executing HIERARCHY pass (managing design hierarchy).
+13.1. Analyzing design hierarchy..
+13.2. Analyzing design hierarchy..
+14. Executing OPT_CLEAN pass (remove unused cells and wires).
+15. Executing RTLIL backend.
+End of script. Logfile hash: e90e21dfef, CPU: user 0.56s system 0.05s, MEM: 93.50 MB peak
+Yosys 0.53 (git sha1 53c22ab7c, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)
+Time spent: 46% 12x read_liberty (0 sec), 33% 2x read_slang (0 sec), ...
+Top level design units:
+    ibex_core
+
+Build succeeded: 0 errors, 0 warnings
+Elapsed time: 0:01.57[h:]min:sec. CPU time: user 0.59 sys 0.05 (41%). Peak memory: 95744KB.

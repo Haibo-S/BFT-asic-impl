@@ -1,0 +1,23 @@
+OpenROAD v2.0-21872-gd51df1dea5 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 32 thread(s).
+source /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/platforms/asap7/liberty_suppressions.tcl
+suppress_message STA 1212
+[INFO ODB-0227] LEF file: /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/platforms/asap7/lef/asap7_tech_1x_201209.lef, created 24 layers, 9 vias
+[INFO ODB-0227] LEF file: /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/platforms/asap7/lef/asap7sc7p5t_28_R_1x_220121a.lef, created 212 library cells
+
+==========================================================================
+Floorplan check_setup
+--------------------------------------------------------------------------
+[WARNING STA-0349] instance '*' not found.
+number instances in verilog is 0
+[WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.052, 2.160).
+[INFO IFP-0001] Added 0 rows of 0 site asap7sc7p5t.
+source /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/platforms/asap7/openRoad/make_tracks.tcl
+repair_timing -verbose -setup_margin 0 -repair_tns 100
+[ERROR DPL-0012] no rows found.
+Error: floorplan.tcl, 111 DPL-0012
+Command exited with non-zero status 1
+Elapsed time: 0:00.82[h:]min:sec. CPU time: user 0.73 sys 0.05 (95%). Peak memory: 188600KB.

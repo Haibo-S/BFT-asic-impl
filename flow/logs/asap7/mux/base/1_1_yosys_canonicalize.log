@@ -1,0 +1,27 @@
+Using ABC speed script.
+Extracting clock period from SDC file: ./results/asap7/mux/base/clock_period.txt
+Setting clock period to 1000
+1. Executing Liberty frontend: ./objects/asap7/mux/base/lib/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib
+2. Executing Liberty frontend: ./objects/asap7/mux/base/lib/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib
+3. Executing Liberty frontend: ./objects/asap7/mux/base/lib/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib
+4. Executing Liberty frontend: ./objects/asap7/mux/base/lib/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib
+5. Executing Liberty frontend: ./objects/asap7/mux/base/lib/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib
+6. Executing Liberty frontend: ./objects/asap7/mux/base/lib/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib
+7. Executing Liberty frontend: ./objects/asap7/mux/base/lib/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib
+8. Executing Liberty frontend: ./objects/asap7/mux/base/lib/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib
+9. Executing Liberty frontend: ./objects/asap7/mux/base/lib/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib
+10. Executing Liberty frontend: ./objects/asap7/mux/base/lib/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib
+11. Executing Verilog-2005 frontend: /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/designs/src/mux/mux.v
+12. Executing Verilog-2005 frontend: /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/platforms/asap7/yoSys/cells_clkgate_R.v
+13. Executing HIERARCHY pass (managing design hierarchy).
+14. Executing AST frontend in derive mode using pre-parsed AST for module `\mux'.
+14.1. Analyzing design hierarchy..
+14.2. Analyzing design hierarchy..
+15. Executing OPT_CLEAN pass (remove unused cells and wires).
+Warning: Ignoring module mux because it contains processes (run 'proc' command first).
+16. Executing RTLIL backend.
+Warnings: 1 unique messages, 1 total
+End of script. Logfile hash: 2d89dfdeac, CPU: user 0.30s system 0.06s, MEM: 70.50 MB peak
+Yosys 0.53 (git sha1 53c22ab7c, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)
+Time spent: 96% 12x read_liberty (0 sec), 1% 2x write_rtlil (0 sec), ...
+Elapsed time: 0:00.56[h:]min:sec. CPU time: user 0.33 sys 0.06 (71%). Peak memory: 75264KB.

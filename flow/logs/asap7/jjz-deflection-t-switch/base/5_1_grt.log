@@ -1,0 +1,311 @@
+OpenROAD v2.0-21872-gd51df1dea5 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 24 thread(s).
+source /home/h3sun/720-noc-project/OpenROAD-flow-scripts/flow/platforms/asap7/liberty_suppressions.tcl
+suppress_message STA 1212
+[INFO DRT-0149] Reading tech and libs.
+
+Units:                1000
+Number of layers:     21
+Number of macros:     212
+Number of vias:       14
+Number of viarulegen: 11
+
+[INFO DRT-0150] Reading design.
+
+Design:                   t_switch
+Die area:                 ( 0 0 ) ( 17379 17379 )
+Number of track patterns: 32
+Number of DEF vias:       0
+Number of components:     939
+Number of terminals:      226
+Number of snets:          2
+Number of nets:           950
+
+[INFO DRT-0167] List of default vias:
+  Layer V2
+    default via: VIA23
+  Layer V3
+    default via: VIA34
+  Layer V4
+    default via: VIA45
+  Layer V5
+    default via: VIA56
+  Layer V6
+    default via: VIA67
+  Layer V7
+    default via: VIA78
+  Layer V8
+    default via: VIA89
+  Layer V9
+    default via: VIA9Pad
+[INFO DRT-0162] Library cell analysis.
+[INFO DRT-0163] Instance analysis.
+[INFO DRT-0164] Number of unique instances = 67.
+[INFO DRT-0168] Init region query.
+[INFO DRT-0024]   Complete Active.
+[INFO DRT-0024]   Complete V0.
+[INFO DRT-0024]   Complete M1.
+[INFO DRT-0024]   Complete V1.
+[INFO DRT-0024]   Complete M2.
+[INFO DRT-0024]   Complete V2.
+[INFO DRT-0024]   Complete M3.
+[INFO DRT-0024]   Complete V3.
+[INFO DRT-0024]   Complete M4.
+[INFO DRT-0024]   Complete V4.
+[INFO DRT-0024]   Complete M5.
+[INFO DRT-0024]   Complete V5.
+[INFO DRT-0024]   Complete M6.
+[INFO DRT-0024]   Complete V6.
+[INFO DRT-0024]   Complete M7.
+[INFO DRT-0024]   Complete V7.
+[INFO DRT-0024]   Complete M8.
+[INFO DRT-0024]   Complete V8.
+[INFO DRT-0024]   Complete M9.
+[INFO DRT-0024]   Complete V9.
+[INFO DRT-0024]   Complete Pad.
+[INFO DRT-0033] Active shape region query size = 0.
+[INFO DRT-0033] V0 shape region query size = 0.
+[INFO DRT-0033] M1 shape region query size = 14668.
+[INFO DRT-0033] V1 shape region query size = 19062.
+[INFO DRT-0033] M2 shape region query size = 572.
+[INFO DRT-0033] V2 shape region query size = 441.
+[INFO DRT-0033] M3 shape region query size = 441.
+[INFO DRT-0033] V3 shape region query size = 294.
+[INFO DRT-0033] M4 shape region query size = 415.
+[INFO DRT-0033] V4 shape region query size = 294.
+[INFO DRT-0033] M5 shape region query size = 276.
+[INFO DRT-0033] V5 shape region query size = 36.
+[INFO DRT-0033] M6 shape region query size = 24.
+[INFO DRT-0033] V6 shape region query size = 0.
+[INFO DRT-0033] M7 shape region query size = 0.
+[INFO DRT-0033] V7 shape region query size = 0.
+[INFO DRT-0033] M8 shape region query size = 0.
+[INFO DRT-0033] V8 shape region query size = 0.
+[INFO DRT-0033] M9 shape region query size = 0.
+[INFO DRT-0033] V9 shape region query size = 0.
+[INFO DRT-0033] Pad shape region query size = 0.
+[INFO DRT-0165] Start pin access.
+[INFO DRT-0078]   Complete 318 pins.
+[INFO DRT-0081]   Complete 67 unique inst patterns.
+[INFO DRT-0084]   Complete 428 groups.
+#scanned instances     = 939
+#unique  instances     = 67
+#stdCellGenAp          = 1296
+#stdCellValidPlanarAp  = 0
+#stdCellValidViaAp     = 1108
+#stdCellPinNoAp        = 0
+#stdCellPinCnt         = 2371
+#instTermValidViaApCnt = 0
+#macroGenAp            = 0
+#macroValidPlanarAp    = 0
+#macroValidViaAp       = 0
+#macroNoAp             = 0
+[INFO DRT-0166] Complete pin access.
+[INFO DRT-0267] cpu time = 00:00:12, elapsed time = 00:00:00, memory = 197.85 (MB), peak = 197.85 (MB)
+global_route -congestion_report_file ./reports/asap7/jjz-deflection-t-switch/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose
+[INFO GRT-0020] Min routing layer: M2
+[INFO GRT-0021] Max routing layer: M7
+[INFO GRT-0022] Global adjustment: 0%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer M1      Track-Pitch = 0.0360  line-2-Via Pitch: 0.0360
+[INFO GRT-0088] Layer M2      Track-Pitch = 0.0390  line-2-Via Pitch: 0.0360
+[INFO GRT-0088] Layer M3      Track-Pitch = 0.0360  line-2-Via Pitch: 0.0360
+[INFO GRT-0088] Layer M4      Track-Pitch = 0.0480  line-2-Via Pitch: 0.0480
+[INFO GRT-0088] Layer M5      Track-Pitch = 0.0480  line-2-Via Pitch: 0.0480
+[INFO GRT-0088] Layer M6      Track-Pitch = 0.0640  line-2-Via Pitch: 0.0640
+[INFO GRT-0088] Layer M7      Track-Pitch = 0.0640  line-2-Via Pitch: 0.0640
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0004] Blockages: 327
+[INFO GRT-0019] Found 10 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 17
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+M1         Vertical            0             0          0.00%
+M2         Horizontal      13408          7578          43.48%
+M3         Vertical        15424         10577          31.43%
+M4         Horizontal      11328          7817          30.99%
+M5         Vertical        11328          7601          32.90%
+M6         Horizontal       8224          5448          33.75%
+M7         Vertical         8224          5952          27.63%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 4388
+[INFO GRT-0198] Via related Steiner nodes: 96
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 5856
+[INFO GRT-0112] Final usage 3D: 21828
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+M1                   0             0            0.00%             0 /  0 /  0
+M2                7578          1620           21.38%             0 /  0 /  0
+M3               10577          1845           17.44%             0 /  0 /  0
+M4                7817           559            7.15%             0 /  0 /  0
+M5                7601           222            2.92%             0 /  0 /  0
+M6                5448            14            0.26%             0 /  0 /  0
+M7                5952             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            44973          4260            9.47%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 3451 um
+[INFO GRT-0014] Routed nets: 946
+Perform buffer insertion and gate resizing...
+repair_design -verbose
+[INFO RSZ-0058] Using max wire length 162um.
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |       957
+       10 |     +0.0% |       0 |       0 |             0 |       947
+       20 |     +0.0% |       0 |       0 |             0 |       937
+       30 |     +0.0% |       0 |       0 |             0 |       927
+       40 |     +0.0% |       0 |       0 |             0 |       917
+       50 |     +0.0% |       0 |       0 |             0 |       907
+       60 |     +0.0% |       0 |       0 |             0 |       897
+       70 |     +0.0% |       0 |       0 |             0 |       887
+       80 |     +0.0% |       0 |       0 |             0 |       877
+       90 |     +0.0% |       0 |       0 |             0 |       867
+      100 |     +0.0% |       0 |       0 |             0 |       857
+      110 |     +0.0% |       0 |       0 |             0 |       847
+      120 |     +0.0% |       0 |       0 |             0 |       837
+      130 |     +0.0% |       0 |       0 |             0 |       827
+      140 |     +0.0% |       0 |       0 |             0 |       817
+      150 |     +0.0% |       0 |       0 |             0 |       807
+      160 |     +0.0% |       0 |       0 |             0 |       797
+      170 |     +0.0% |       0 |       0 |             0 |       787
+      180 |     +0.0% |       0 |       0 |             0 |       777
+      190 |     +0.0% |       0 |       0 |             0 |       767
+      200 |     +0.0% |       0 |       0 |             0 |       757
+      210 |     +0.0% |       0 |       0 |             0 |       747
+      220 |     +0.0% |       0 |       0 |             0 |       737
+      230 |     +0.0% |       0 |       0 |             0 |       727
+      240 |     +0.0% |       0 |       0 |             0 |       717
+      250 |     +0.0% |       0 |       0 |             0 |       707
+      260 |     +0.0% |       0 |       0 |             0 |       697
+      270 |     +0.0% |       0 |       0 |             0 |       687
+      280 |     +0.0% |       0 |       0 |             0 |       677
+      290 |     +0.0% |       0 |       0 |             0 |       667
+      300 |     +0.0% |       0 |       0 |             0 |       657
+      310 |     +0.0% |       0 |       0 |             0 |       647
+      320 |     +0.0% |       0 |       0 |             0 |       637
+      330 |     +0.0% |       0 |       0 |             0 |       627
+      340 |     +0.0% |       0 |       0 |             0 |       617
+      350 |     +0.0% |       0 |       0 |             0 |       607
+      360 |     +0.0% |       0 |       0 |             0 |       597
+      370 |     +0.0% |       0 |       0 |             0 |       587
+      380 |     +0.0% |       0 |       0 |             0 |       577
+      390 |     +0.0% |       0 |       0 |             0 |       567
+      400 |     +0.0% |       0 |       0 |             0 |       557
+      410 |     +0.0% |       0 |       0 |             0 |       547
+      420 |     +0.0% |       0 |       0 |             0 |       537
+      430 |     +0.0% |       0 |       0 |             0 |       527
+      440 |     +0.0% |       0 |       0 |             0 |       517
+      450 |     +0.0% |       0 |       0 |             0 |       507
+      460 |     +0.0% |       0 |       0 |             0 |       497
+      470 |     +0.0% |       0 |       0 |             0 |       487
+      480 |     +0.0% |       0 |       0 |             0 |       477
+      490 |     +0.0% |       0 |       0 |             0 |       467
+      500 |     +0.0% |       0 |       0 |             0 |       457
+      510 |     +0.0% |       0 |       0 |             0 |       447
+      520 |     +0.0% |       0 |       0 |             0 |       437
+      530 |     +0.0% |       0 |       0 |             0 |       427
+      540 |     +0.0% |       0 |       0 |             0 |       417
+      550 |     +0.0% |       0 |       0 |             0 |       407
+      560 |     +0.0% |       0 |       0 |             0 |       397
+      570 |     +0.0% |       0 |       0 |             0 |       387
+      580 |     +0.0% |       0 |       0 |             0 |       377
+      590 |     +0.0% |       0 |       0 |             0 |       367
+      600 |     +0.0% |       0 |       0 |             0 |       357
+      610 |     +0.0% |       0 |       0 |             0 |       347
+      620 |     +0.0% |       0 |       0 |             0 |       337
+      630 |     +0.0% |       0 |       0 |             0 |       327
+      640 |     +0.0% |       0 |       0 |             0 |       317
+      650 |     +0.0% |       0 |       0 |             0 |       307
+      660 |     +0.0% |       0 |       0 |             0 |       297
+      670 |     +0.0% |       0 |       0 |             0 |       287
+      680 |     +0.0% |       0 |       0 |             0 |       277
+      690 |     +0.0% |       0 |       0 |             0 |       267
+      700 |     +0.0% |       0 |       0 |             0 |       257
+      710 |     +0.0% |       0 |       0 |             0 |       247
+      720 |     +0.0% |       0 |       0 |             0 |       237
+      730 |     +0.0% |       0 |       0 |             0 |       227
+      740 |     +0.0% |       0 |       0 |             0 |       217
+      750 |     +0.0% |       0 |       0 |             0 |       207
+      760 |     +0.0% |       0 |       0 |             0 |       197
+      770 |     +0.0% |       0 |       0 |             0 |       187
+      780 |     +0.0% |       0 |       0 |             0 |       177
+      790 |     +0.0% |       0 |       0 |             0 |       167
+      800 |     +0.0% |       0 |       0 |             0 |       157
+      810 |     +0.0% |       0 |       0 |             0 |       147
+      820 |     +0.0% |       0 |       0 |             0 |       137
+      830 |     +0.0% |       0 |       0 |             0 |       127
+      840 |     +0.0% |       0 |       0 |             0 |       117
+      850 |     +0.0% |       0 |       0 |             0 |       107
+      860 |     +0.0% |       0 |       0 |             0 |        97
+      870 |     +0.0% |       0 |       0 |             0 |        87
+      880 |     +0.0% |       0 |       0 |             0 |        77
+      890 |     +0.0% |       0 |       0 |             0 |        67
+      900 |     +0.0% |       0 |       0 |             0 |        57
+      910 |     +0.0% |       0 |       0 |             0 |        47
+      920 |     +0.0% |       0 |       0 |             0 |        37
+      930 |     +0.0% |       0 |       0 |             0 |        27
+      940 |     +0.0% |       0 |       0 |             0 |        17
+      950 |     +0.0% |       0 |       0 |             0 |         7
+    final |     +0.0% |       0 |       0 |             0 |         0
+---------------------------------------------------------------------
+global_route -start_incremental
+detailed_placement
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL            2102.7 u
+legalized HPWL           2102.7 u
+delta HPWL                    0 %
+
+global_route -end_incremental -congestion_report_file ./reports/asap7/jjz-deflection-t-switch/base/congestion_post_repair_design.rpt
+Repair setup and hold violations...
+repair_timing -verbose -setup_margin 0 -hold_margin 0 -repair_tns 100
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeMove SwapPinsMove BufferMove CloneMove SplitLoadMove 
+[INFO RSZ-0098] No setup violations found
+[INFO RSZ-0033] No hold violations found.
+global_route -start_incremental
+detailed_placement
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL            2102.7 u
+legalized HPWL           2102.7 u
+delta HPWL                    0 %
+
+global_route -end_incremental -congestion_report_file ./reports/asap7/jjz-deflection-t-switch/base/congestion_post_repair_timing.rpt
+global_route -start_incremental
+global_route -end_incremental -congestion_report_file ./reports/asap7/jjz-deflection-t-switch/base/congestion_post_recover_power.rpt
+Repair antennas...
+[WARNING GRT-0246] No diode with LEF class CORE ANTENNACELL found.
+[INFO ANT-0002] Found 0 net violations.
+[INFO ANT-0001] Found 0 pin violations.
+Estimate parasitics...
+Report metrics stage 5, global route...
+
+==========================================================================
+global route report_design_area
+--------------------------------------------------------------------------
+Design area 95 u^2 55% utilization.
+[INFO FLW-0007] clock core_clock period 1000.000000
+[INFO FLW-0008] Clock core_clock period 301.660
+[INFO FLW-0009] Clock core_clock slack 682.463
+[INFO FLW-0011] Path endpoint path count 225
+Elapsed time: 0:03.28[h:]min:sec. CPU time: user 14.09 sys 0.41 (442%). Peak memory: 294980KB.
